@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    <title>Meet the Team</title>
+   
+	    
+<style>
+   /* General body styling */    
+   body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+          background: url("img3/fish.jpg");
+        }
+		/* Container for team members with flexbox layout */
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+		       
+        /* Styling for each team member card */
+        .team-member {
+            position: relative;
+            width: 220px;
+            text-align: center;
+            background: #ecf0f1;
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+		/* Hover effect for team member cards to slightly enlarge */
+        .team-member:hover {
+            transform: scale(1.06);
+        }
+		 /* Styling for team member images */
+        .team-member img {
+            width: 100%;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+		/* Zoom effect on image when hovering over team member *
+        .team-member:hover img {
+            transform: scale(1.1);
+        }
+		/* Styling for team details, initially hidden */
+        .team-details {
+            position: absolute;
+           bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 60px;
+            display: none;
+        }
+		/* Show team details when hovering over the team member */
+        .team-member:hover .team-details {
+            display: block;
+        }
+        .team-member:focus-within .team-details {
+            display: block;
+        }
+		/* Make team container responsive on small screens */
+		.team-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Adds spacing between team members */
+    padding: 100px;
+}
+  .content-container h1{
+  padding-top:220px;
+  color:rgb(225,251,0);
+  }
+  
+</style>
+</head>
+<body>
+              
+    	<div class="wrapper">
+		<!-- Header section with logo and title -->
+            <div class="header">
+                <div class="logo-container">
+                    <img src="img3/logo.jpg" alt="AquaHorizon Logo" class="logo">
+                    <div class="title-container">
+                        <h1 class="title">AquaHorizon</h1>
+                        <div class="vertical-line"></div>
+                        <div class="subtitle-container">
+                            <span class="subtitle">"Keeping our oceans alive<br>for future generations!"</span>
+                        </div>
+						</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Navigation Bar-->
+            <nav>
+                <a href ="home.html" >Home</a>
+                <a href="Table.html">Table</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="team.html" class="active">Team</a>
+                <a href="profile.html">User Profile</a>
+            </nav>
+			
+			<main class="content-container">
+    <!-- Main content section with team member details -->        
+    <h1>Meet Our Team</h1>
+    <div class="team-container">
+	<!-- Each team member card -->
+        <div class="team-member" tabindex="0">
+            <img src="img3/Thanuvi.jpg" alt="Thanuvi Muthukumarana">
+            <div class="team-details">
+                <h3>Thanuvi Muthukumarana</h3>
+				<p>UOW number:W2120145</P>
+				<p>IIT number:20240868</P>
+                <p>Role:student 1</p>
+                <p>Splash screen|Volunteer</p>
+            </div>
+        </div>
+		<!-- Repeat the above structure for other team members -->
+        <div class="team-member" tabindex="0">
+            <img src="img3/Amoda.jpg" alt="Amoda Liyanage" >
+            <div class="team-details">
+                <h3>Amoda Liyanage</h3>
+				<p>UOW number:W2121219</P>
+				<p>IIT number:20240818</P>
+				<p>Role:student 2</p>
+				<p>Home page|Table</p>
+                
+            </div>
+        </div>
+        <div class="team-member" tabindex="0">
+            <img src="img3/Asadi.jpg" alt="Asadi Imasha">
+            <div class="team-details">
+		        <h3>Asadi Imasha</h3>
+				<p>UOW number:W2120142</P>
+				<p>IIT number:20240861</P>
+				<p>Role:student 3</p>
+                <p>Feedback|Team</p>
+            </div>
+		</div>
+		<div class="team-member" tabindex="0">
+            <img src="img3/Manthisi.avif" alt="Manthisi Herath" >
+            <div class="team-details">
+                <h3>Manthisi Herath</h3>
+				<p>UOW number:W2120136</P>
+				<p>IIT number:20240838</P>
+				<p>Role:student 4</p>
+                <p>user profile|sitemap</p>
+            </div>
+        </div>
+    </div>
+	<!-- Footer section with links and copyright -->
+<footer>
+      <div class="footer-content">
+            <div class="pageeditor" style="padding-bottom: 25px;">
+                <h2>Page Editors</h2>
+                <a href="pageEditor_ST1.html" target="_blank">Page Editor 1</a>
+                <a href="pageEditor_ST2.html" target="_blank">Page Editor 2</a>
+                <a href="pageEditor_ST3.html" target="_blank">Page Editor 3</a>
+                <a href="pageEditor_ST4.html" target="_blank">Page Editor 4</a>
+            </div>
+
+            <div class="styling">
+                <h2>Links</h2>
+                <a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a>
+                <a href="https://www.globalgoals.org/cookies/">Cookies</a>
+                <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a>
+                <a href="https://www.globalgoals.org/asset-licence/">Asset-Licence</a>
+				<p style="padding-top:40px; font-size: 17px;">"These links direct to Global Goals' policies for reference purposes only and do not imply official affiliation."</p>
+             </div>
+
+             <div class="copyright">
+                <p>&copy; 2024 AquaHorizon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+	</main>
+</body>
+</html>

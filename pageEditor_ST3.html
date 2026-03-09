@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> <!-- External CSS link -->
+        <title></title>
+    </head>
+    <style>
+
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+main {
+    flex: 3;
+}
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+section h3{
+    padding: 10px;
+}
+
+section p{
+    padding: 10px;
+}
+
+.ref li{
+    list-style: none;
+    padding-bottom: 9px;
+}
+
+aside a{
+    text-decoration : none;
+}
+
+aside li{
+    padding-bottom: 4px;
+}
+
+.stud {
+    text-align: center;
+    line-height: 0;
+    background-color: #cbccc2ef;
+    color: white;
+    margin-top: 0%;
+    padding-top: 220px;
+}
+
+.top-level-ul{
+    padding: 10px;
+}
+
+.top-level-ul ul{
+    padding-left: 60px;
+}
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+        
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+img{
+    width: 90%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    text-align: center;
+    color: white; }
+
+</style>
+   
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <div class="header">
+        <div class="logo-container">
+            <img src="img3\logo.jpg" alt="AquaHorizon Logo" class="logo">
+            <div class="title-container">
+                <h1 class="title">AquaHorizon</h1>
+                <div class="vertical-line"></div>
+                <div class="subtitle-container">
+                    <span class="subtitle">"Keeping our oceans alive<br>for future generations!"</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Navigation Bar-->
+    <nav>
+		<a href ="home.html" >Home</a>
+		<a href="Table.html">Table</a>
+		<a href="volunteer.html">Volunteer</a>
+		<a href="feedback.html" >Feedback</a>
+		<a href="sitemap.html">Sitemap</a>
+		<a href="team.html" >Team</a>
+		<a href="profile.html">User Profile</a>
+	</nav>
+
+    <section class="stud" id="top">
+        <h2>Asadi Imasha, student 3</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="Feedback">Feedback</h2>
+                    <h3>Technical Description</h3>
+					<h4>HTML structure:</h4>
+                    <p>The HTML structure forms the foundation of the webpage. It uses semantic elements like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;,&lt;section&gt;, and &lt;footer&gt; to improve readability, accessibility, and SEO optimization. Container elements (&lt;div&gt;) and inline elements (&lt;span&gt;) help organize content and apply styling. Forms (&lt;form&gt;) and various input fields such as &lt;input&gt;, &lt;textarea&gt;, and &lt;select&gt; allow user interaction and data collection. Navigation (&lt;nav&gt;) and links (&lt;a&gt;) ensure smooth browsing across different sections of the website.</p>
+                    <h4>CSS techniques:</h4>
+					<p>The CSS techniques enhances the visual presentation and layout of the webpage. It utilizes the box model (margin, padding, border, width, height) for spacing and alignment. Layout techniques like flexbox and grid ensure a structured and responsive design. Typography properties (font-family, font-size, line-height) improve readability, while color and background properties (color, background-color, opacity) create a visually appealing design. Interactivity features such as hover effects, animations, and transitions enhance user experience. Additionally, media queries (@media) make the webpage responsive, ensuring it adapts well to different screen sizes, including mobile devices.</p>
+                    <h3>Accessibility</h3>
+                        <p>Ensuring accessibility in the implemented page was a priority to make it user-friendly for all individuals, including those with disabilities. Semantic HTML elements such as &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, and &lt;footer&gt; were used to create a well-structured page, improving navigation for screen readers. Additionally, form elements were properly labeled with &lt;label&gt;, &lt;fieldset&gt;, and &lt;legend&gt; to provide clear instructions for users relying on assistive technologies.
+
+                        To enhance usability, ARIA attributes like aria-label and aria-describedby were incorporated to provide additional context where necessary. The page was designed to be fully keyboard-navigable, ensuring that all interactive elements, such as buttons and form inputs, could be accessed without a mouse. Focus states were also clearly defined using :focus styles to help users track their position while navigating.
+
+                        Color contrast was carefully considered to maintain readability, ensuring that text and backgrounds had sufficient contrast. Additionally, important information was not conveyed by color alone; for example, error messages included both text and icons to aid color-blind users. The page also followed responsive design principles using @media queries and relative font sizes (em, rem) to accommodate different screen sizes and allow users to zoom without breaking the layout.</p>
+                    
+                   <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the Content page -->
+                        <p><a href="validation_ST3.html#Feedback">link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="feedback.html"> link to the Feedback.</a></p>
+            </section>
+            <section>
+                <h2 id="Team">Team</h2>
+                    <h3>Technical Description</h3>
+					<h4>HTML structure:</h4>
+                        <p>The HTML structure of the webpage is organized to create a clear and accessible layout. The header section uses &lt;div&gt; elements to encapsulate the logo, website title, and subtitle. This grouping ensures that these elements are displayed together and easily identifiable. The navigation bar is created using the &lt;nav&gt; tag, which contains a series of &lt;a&gt; links for navigating to different sections of the website. This allows users to quickly move between pages. The main content section is enclosed in a &lt;main&gt; tag, where the core of the website, such as the team profiles, is displayed. Inside this section, a flexbox container (&lt;div class="team-container"&gt;) holds individual team member elements, each represented as a card with an image and details. Finally, the footer section is used to display additional information, such as links to the privacy policy and the copyright notice. Using semantic HTML elements like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt; helps structure the content logically and improves accessibility.</p>
+                    <h4>CSS techniques:</h4>
+					<p>The CSS used on the page is designed to create a visually appealing and responsive layout. The flexbox layout is used to arrange the team member cards in a row and ensure that they adjust properly across different screen sizes. By applying display: flex; and flex-wrap: wrap;, the team member cards will automatically adjust their positions depending on the available space. Hover effects are added to the team member cards, using transform: scale(1.06); to slightly enlarge the cards when the user hovers over them, providing interactive feedback. The team details section is initially hidden with display: none; and becomes visible when the user hovers over a team member's card, achieved by the CSS rule .team-member:hover .team-details { display: block; }. This keeps the interface clean and only reveals additional information when needed. The navigation bar is styled with display: flex; to align the links horizontally and justify-content: center; to center them, ensuring the navigation is intuitive and user-friendly. The use of transitions on hover effects allows smooth scaling and opacity changes, creating a polished and dynamic user experience. This combination of styling techniques ensures that the webpage is both functional and visually engaging.</p> 
+                    <h3>Accessibility</h3>
+                        <p>In this webpage, accessibility was prioritized to ensure it is usable by all individuals, including those with disabilities. One of the main techniques used was semantic HTML, which involves using meaningful HTML tags like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, and &lt;footer&gt;. These tags help organize the content logically and provide structure, which is essential for users relying on screen readers. For instance, the &lt;nav&gt; tag clearly identifies the navigation links, and the &lt;main&gt; tag marks the primary content of the page, making it easier for assistive technologies to navigate.
+                         Alt text was provided for all images to ensure that users with visual impairments can understand what the images represent. For example, descriptive alt attributes like "AquaHorizon Logo" and "Thanuvi Muthukumarana" help convey the meaning behind the images to screen reader users.
+                        To make the site more keyboard accessible, each team member profile (.team-member) has a tabindex="0", allowing users to navigate through the profiles using the Tab key. Additionally, the details of each team member are displayed when the user hovers or focuses on the card, ensuring that keyboard and mouse users both have access to the same information.</p>
+
+                   <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the Content page -->
+                        <p><a href="validation_ST3.html#Team">link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="team.html"> link to the Team.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+					<h4>HTML structure:</h4>
+                        <p>The HTML structure of the page is designed for semantic clarity and accessibility. It starts with the &lt;html&gt; tag, defining the document’s root, followed by the &lt;head&gt;  section containing metadata such as the character encoding (&lt;meta charset="UTF-8"&gt;) and viewport settings (&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;). These ensure that the page is accessible across devices with proper text rendering. Within the &lt;body&gt;, the page is broken down into distinct content sections using semantic tags like &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;>, and &lt;footer&gt;. These sections organize the content logically for both users and search engines. For example, &lt;header&gt; typically holds introductory content or the site’s logo, while the &lt;footer&gt; contains copyright or contact information. Using these tags helps with SEO and accessibility by giving the page a clear structure.
+                         In addition to the structural tags, content is grouped using the &lt;div&gt; tag when necessary, though this is used more sparingly for layout purposes. The use of heading tags like &lt;h1&gt; and &lt;h2&gt; provides a clear content hierarchy, allowing users and search engines to understand the main topics and subtopics of the page. Links are handled using the &lt;a&gt; tag, and navigation is typically wrapped in a &lt;nav&gt; tag for better organization. Images are embedded with the &lt;img&gt; tag, with the alt attribute included for accessibility. For interactive and grouped content like lists, the &lt;ul&gt; and &lt;li&gt;> tags are employed. Overall, the HTML structure ensures that the page is both well-organized for users and optimized for search engines.</p>
+                    <h4>CSS techniques:</h4>
+					    <p>The CSS techniques used focus on creating a responsive and visually appealing design. The layout is based on a combination of flexbox and traditional box-model properties. Flexbox is particularly useful for creating flexible, responsive layouts. It allows for easy alignment and distribution of items within a container. For instance, containers that hold multiple sections (like images or text) use display: flex to position child elements horizontally or vertically, depending on the screen size.
+                        A major part of the design is ensuring the page is responsive across various devices. This is achieved through the use of media queries, which apply different styles based on the viewport size. For instance, on smaller screens, images may shrink, and text may stack vertically instead of appearing side-by-side. This ensures the design adapts fluidly to mobile devices, tablets, and desktop screens, improving the user experience.
+                        To ensure the design is visually engaging, background colors, borders, and shadows are used strategically. For example, light backgrounds and contrasting text colors make the content more readable, while the use of box-shadow and border-radius creates depth and a polished look. The hover effect on buttons and links, such as changing the background color, provides interactive feedback, making the interface feel more dynamic and responsive to user actions.
+                        To maintain proper spacing and alignment, padding and margin properties are utilized extensively. For example, padding inside containers ensures that content doesn't touch the edges, and margins are used to create space between different sections, making the page feel less cluttered. Additionally, box-sizing: border-box ensures that padding and borders are included in the element’s width and height, making layout sizing more predictable.</p>
+                    <h3>Accessibility</h3>
+                        <p>The page is designed with accessibility in mind by using semantic HTML tags like &lt;header&gt;, &ltnav&gt, and &ltmain&gt for clear structure, ensuring screen readers can interpret content easily. Alt text is provided for images, and forms are labeled correctly for screen readers. The design is keyboard-navigable, with "skip to content" links and focus styles for users who rely on keyboards. Color contrast is optimized for readability, and the page adapts to different screen sizes using responsive design. ARIA roles and properties enhance accessibility further, making the page usable for all users, including those with disabilities.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the Content page -->
+                        <p><a href="validation_ST3.html#content">link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="content_ST3.html"> link to the Content.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>During the implementation of the page, several challenges arose that needed to be addressed. One of the primary difficulties was ensuring responsive design across different devices and screen sizes. Initially, the layout didn’t adjust well, especially on mobile screens. To resolve this, I used media queries and Flexbox to create a flexible and adaptable layout. This ensured that content like images and text blocks would adjust smoothly from multi-column layouts on desktops to single-column formats on mobile devices.
+                     Another challenge was the image alignment and sizing. The images were either too large or misaligned, disrupting the page’s structure. To solve this, I applied max-width and width properties to make sure the images re</p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>The pages I created comply with Janet regulations by focusing on key areas like accessibility, security, and interoperability. I used semantic HTML tags, provided alt text for images, ensured color contrast, and supported keyboard navigation to meet accessibility standards. For security, I implemented HTTPS, form validation, and used content security policies. The site is responsive and cross-browser compatible to ensure interoperability. Additionally, I followed data protection practices, ensuring privacy and transparency for users. Overall, the page adheres to Janet’s guidelines for creating secure, accessible, and user-friendly web content.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">link to the iStock</a> (Last accessed: 9 Mar 2025).</li>
+                        <li>Google Developers, 2025. Responsive Web Design Basics. Available at:<a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive"> link to the Google Developers </a> (Last accessed: 9 Mar 2025).i></li>
+						<li>W3C (World Wide Web Consortium). 2025. Web Content Accessibility Guidelines (WCAG) Overview. Available at:<a href="https://www.w3.org/"> link to the W3C</a>(Last accessed: 9 Mar 2025).</li>
+						<li>WebAIM, 2025. Color Contrast Checker. Available at:<a href="https://webaim.org/resources/contrastchecker/"> link to the WebAIM </a>(Last accessed: 9 Mar 2025).</li>
+						<li>W3Schools. Available at:<a href= https://www.w3schools.com> link to the W3Schools </a>(Last accessed: 9 Mar 2025).</li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+               
+                 <li>Student 3</li>
+                    <ul>
+                        <li><a href="#Feedback">Feedback page</a> </li>
+                        <li><a href="#Team">Team page</a></li>
+                        <li><a href="#Content Page">Content page</a></li>
+                    </ul>
+                
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+                </ul>
+                </aside>
+                </div>
+
+     <footer>
+                <div class="footer-content">
+                    <div class="pageeditor" style="padding-bottom: 25px;">
+                        <h2>Page Editors</h2>
+                        <a href="pageEditor_ST1.html" target="_blank">Page Editor 1</a>
+                        <a href="pageEditor_ST2.html" target="_blank">Page Editor 2</a>
+                        <a href="pageEditor_ST3.html" target="_blank">Page Editor 3</a>
+                        <a href="pageEditor_ST4.html" target="_blank">Page Editor 4</a>
+                    </div>
+
+                    <div class="styling">
+                        <a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a>
+                <a href="https://www.globalgoals.org/cookies/">Cookies</a>
+                <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a>
+                <a href="https://www.globalgoals.org/asset-licence/">Asset-Licence</a>
+				<p style="padding-top:40px; font-size: 17px;">"These links direct to Global Goals' policies for reference purposes only and do not imply official affiliation."</p>
+                     </div>
+
+                     <div class="copyright">
+                        <p>&copy; 2024 AquaHorizon. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>

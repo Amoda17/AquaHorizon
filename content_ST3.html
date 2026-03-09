@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content- AquaHorizon</title>
+    <link rel="stylesheet" href="style.css">
+	<style>
+    /* Sustainable Fishing and Aquaculture Content Page Styles */
+ 
+
+/* General Content Layout */
+.content-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+/* Container for all sections */
+.content-container {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+	padding: 180px;
+    box-sizing: border-box; /* Ensures padding doesn’t increase width */
+}
+
+
+.content-section p {
+    text-align: justify;
+    line-height: 1.6; /* Improves readability */
+    margin-bottom: 15px; /* Adds spacing between paragraphs */
+}
+
+/* Section Styling */
+.content-section {
+    background: #d6eaf8; /* Light blue background */
+    padding: 50px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.content-section h2 {
+    color: #006699;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Images */
+.content-section img {
+    width: 50%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Causes Section - Align Images Left */
+.causes-section {
+    display: flex;
+    flex-direction: column; /* Keeps each cause stacked */
+    gap: 30px; /* Adds spacing between causes */
+}
+
+/* Individual Cause Blocks */
+.cause {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 20px; /* Space between image and text */
+    background:#7fb3d5  ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Images in Causes Section */
+.causes-section .cause img {
+    width: 35%; /* Adjusts width for better layout */
+    max-width: 350px;
+    border-radius: 5px;
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+/* Text Content */
+.cause-text {
+    flex: 1; /* Allows text to take remaining space */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .cause {
+        flex-direction: column; /* Stack image above text on small screens */
+        text-align: center;
+    }
+
+    .causes-section .cause img {
+        width: 80%; /* Adjust image size for small screens */
+        max-width: 100%;
+    }
+}
+
+/* Solutions Section - Align Images Left */
+.solutions-section {
+    display: flex;
+    flex-direction: column; /* Keeps each cause stacked */
+    gap: 50px; /* Adds spacing between causes */
+}
+
+/* Individual Cause Blocks */
+.solution{
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 20px; /* Space between image and text */
+    background:#7fb3d5  ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Images in Solutions Section */
+.solutions-section.cause img {
+    width: 35%; /* Adjusts width for better layout */
+    max-width: 350px;
+    border-radius: 5px;
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+/* Text Content */
+.solution-text {
+    flex: 1; /* Allows text to take remaining space */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .solution {
+        flex-direction: column; /* Stack image above text on small screens */
+        text-align: center;
+    }
+
+    .solutions-section .solution img {
+        width: 80%; /* Adjust image size for small screens */
+        max-width: 100%;
+    }
+}
+
+
+/* Internal Navigation Menu */
+.internal-nav {
+    position: fixed;
+    top: 180px; /* Adjust below the header */
+    left: 10px; /* Position on the left side */
+    background: rgba(173, 216, 230, 0.8); /* Dark semi-transparent background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it stays above content */
+}
+
+/* Ensure list styles and spacing */
+.internal-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.internal-nav ul li {
+    margin: 10px 0;
+}
+
+.internal-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 8px 12px;
+    transition: background 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.internal-nav ul li a:hover {
+    background: #39a9f5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .internal-nav {
+        top: auto;
+        bottom: 80px; /* Moves below content for mobile */
+        left: 10px;
+        width: auto;
+    }
+    
+    .internal-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .internal-nav ul li {
+        margin: 0 5px;
+    }
+
+    .internal-nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* "Go to Top" Button - Always Visible */
+#go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+
+#go-top:hover {
+    background: #005f87;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .internal-nav {
+        top: auto;
+        bottom: 80px; /* Move below content for small screens */
+        left: 10px;
+        width: auto;
+    }
+    
+    .internal-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .internal-nav ul li {
+        margin: 0 5px;
+    }
+
+    .internal-nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 10px;
+    }
+    .section {
+        padding: 15px;
+    }
+    .section h2 {
+        font-size: 24px;
+    }
+    .section p {
+        font-size: 16px;
+    }
+}
+</style>
+</head>
+<body>
+    
+	<div class="wrapper">
+            <div class="header">
+                <div class="logo-container">
+                    <img src="img3/logo.jpg" alt="AquaHorizon Logo" class="logo">
+                    <div class="title-container">
+                        <h1 class="title">AquaHorizon</h1>
+                        <div class="vertical-line"></div>
+                        <div class="subtitle-container">
+                            <span class="subtitle">"Keeping our oceans alive<br>for future generations!"</span>
+                        </div>
+						</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Navigation Bar-->
+            <nav>
+                <a href ="home.html" >Home</a>
+                <a href="Table.html">Table</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="feedback.html" >Feedback</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="team.html" >Team</a>
+                <a href="profile.html">User Profile</a>
+            </nav>
+			
+			
+			 <!-- Internal Page Navigation -->
+			<div class="internal-nav">
+				<a href="#introduction">Introduction</a>
+				<a href="#causes">Causes</a>
+				<a href="#Threats">Threats</a>
+				<a href="#Types">Types</a>
+			</div>
+			
+			
+			<main class="content-container">
+    <!-- Introduction Section -->
+	<section id="introduction" id="top" class="content-section">
+        <h2 style="color:black; font-size: 45px">Sustainable Fishing and Aquaculture</h2>
+		<h2>Introduction</h2>
+        <p>Sustainable fishing and aquaculture are essential for maintaining healthy marine ecosystems while meeting the global demand for seafood. Sustainable fishing involves responsible practices that prevent overfishing, protect marine habitats, and minimize bycatch by using selective gear and enforcing catch limits. On the other hand, sustainable aquaculture focuses on farming fish and other seafood in environmentally friendly ways, such as reducing water pollution, using sustainable feed, and preventing habitat destruction. By balancing conservation with economic needs, these practices help protect biodiversity, support coastal communities, and ensure a stable seafood supply for future generations.</p>
+        <img src="img3/istockphoto-1402740760-612x612.jpg" alt="Pollution in the ocean">
+    </section>
+
+	<section id="causes" class="content-section causes-section">
+	<h2>Causes of Sustainable Fishing and Aquaculture</h2>
+
+    
+	<div class="cause">
+		<img src="img3/istockphoto-1210716097-612x612.jpg" alt="Overfishing and Depleting Fish Stocks">
+        <div class="cause-text">
+        <h3>1. Overfishing and Depleting Fish Stocks</h3>
+        <p>Overfishing and depleting fish stocks occur when fish are caught at a faster rate than they can reproduce, leading to a decline in population levels. This threatens marine biodiversity, disrupts ecosystems, and reduces the availability of seafood for future generations. Overfishing is often driven by high consumer demand, illegal fishing, and inefficient regulations. As fish stocks decline, it also negatively impacts fishing communities that rely on seafood for their livelihoods. To combat this issue, sustainable fishing practices such as catch limits, seasonal restrictions, and marine protected areas are essential for restoring and maintaining healthy fish populations.
+        </p>
+        </div>
+    </div>
+
+    <div class="cause">
+		<img src="img3/istockphoto-1316941982-612x612.jpg" alt="Marine Ecosystem Protection">
+		<div class="cause-text">
+		<h3>2. Marine Ecosystem Protection</h3>
+        <p>Marine ecosystem protection is crucial for preserving the health and balance of ocean environments, which support diverse marine life and provide essential resources for humans. Pollution, habitat destruction, climate change, and overfishing threaten these ecosystems, leading to biodiversity loss and environmental degradation. Protecting marine ecosystems involves measures such as establishing marine protected areas, reducing pollution, promoting sustainable fishing, and restoring damaged habitats like coral reefs and mangroves. By safeguarding these ecosystems, we ensure the long-term health of marine life, maintain food security, and support the livelihoods of coastal communities.</p>
+        </div>
+    </div>
+
+    <div class="cause">
+		<img src="img3/istockphoto-1439660611-612x612.jpg" alt="Rising Global Seafood Demand">
+		<div class="cause-text">
+        <h3>3. Rising Global Seafood Demand</h3>
+        <p>The rising global seafood demand is driven by population growth, changing dietary preferences, and the increasing recognition of seafood as a healthy protein source. As more people consume fish and other seafood, pressure on wild fish stocks intensifies, leading to overfishing and ecosystem degradation. To meet this growing demand while preserving marine biodiversity, sustainable fishing and responsible aquaculture practices are essential. Innovations in fish farming, improved fishing regulations, and consumer awareness about sustainable seafood choices play a vital role in balancing seafood supply with environmental conservation.</p>
+		</div>
+	</div>
+
+    <div class="cause">
+        <img src="img3/download.jpg" alt="Climate change and air pollution">
+		<div class="cause-text">
+        <h3>4. Climate Change and Pollution</h3>
+        <p>Climate change and pollution pose significant threats to marine ecosystems, affecting fish populations, coral reefs, and overall ocean health. Rising sea temperatures, ocean acidification, and changing weather patterns disrupt marine habitats and fish migration. Additionally, pollution from plastic waste, oil spills, and agricultural runoff leads to habitat destruction and harmful algal blooms. These environmental changes threaten biodiversity and the livelihoods of coastal communities. To mitigate these impacts, sustainable fishing, reducing carbon emissions, and implementing stricter pollution controls are essential for preserving marine life and ensuring the long-term health of ocean ecosystems.</p>
+        </div>
+        </div>
+
+</section>
+    <!-- Threats of Sustainable Fishing and Aquaculture -->
+    <section id="Threats" class="content-section">
+    <h2>Threats of Sustainable Fishing and Aquaculture</h2>
+	
+	<div class="Threats">     
+		
+        <img src="img3/istockphoto-1449772309-612x612.jpg" alt="Marine Fish Hatchery">
+	    <div class="Threats-text">
+		<p>Despite the benefits of sustainable fishing and aquaculture, several threats challenge their effectiveness. Overfishing, pollution, and the impacts of climate change disrupt marine ecosystems and fish populations, while diseases and parasites can affect both wild and farmed species. Habitat destruction and invasive species also threaten the balance of marine environments. Additionally, the reliance on fishmeal in aquaculture feed can contribute to overfishing. These challenges highlight the need for continuous innovation, stronger regulations, and global collaboration to ensure that sustainable practices can successfully protect marine biodiversity and support food security.</p> 
+        </div>
+        </div>
+	</section>
+
+    <!-- Types of Aquaculture -->
+    
+    <section id="Types" class="content-section">
+    <h2>Types of Aquaculture</h2>
+	
+    <div class="solution">
+        <img src="img3/istockphoto-1251358437-612x612.jpg" alt="Marine Fish Hatchery">
+		<div class="solution-text">
+		<h3>1.Marine Aquaculture</h3>
+        <p>Marine aquaculture, also known as mariculture, involves the farming of fish, shellfish, and seaweed in ocean waters, coastal areas, or man-made enclosures. It plays a crucial role in meeting the rising global seafood demand while reducing pressure on wild fish stocks. Commonly farmed species include salmon, tuna, shrimp, oysters, and mussels. Sustainable marine aquaculture practices focus on minimizing environmental impacts by using eco-friendly feeds, reducing waste, and preventing habitat destruction. When managed responsibly, marine aquaculture helps support food security, economic growth, and marine ecosystem conservation.</p>
+        </div>
+    </div>
+
+    <div class="solution">
+		<img src="img3/images.jpg" alt="land-based and freshwater fish farms">
+		<div class="solution-text">
+        <h3>2. Freshwater Aquaculture</h3>
+        <p>Freshwater aquaculture involves the cultivation of fish and other aquatic species in freshwater environments such as lakes, ponds, rivers, and artificial tanks. It is a significant contributor to global seafood production, providing a sustainable alternative to wild-caught fish. Commonly farmed species include tilapia, catfish, carp, and trout. Sustainable freshwater aquaculture practices focus on efficient water use, responsible feed management, and disease prevention to minimize environmental impact. By promoting eco-friendly farming methods, freshwater aquaculture helps ensure food security, supports rural economies, and reduces pressure on natural fish populations.</p>
+        </div>
+    </div>
+   
+
+    <div class="solution">
+		<img src="img3/download2.jpg" alt="Brackish Water Aquaculture based Integrated farming system">
+		<div class="solution-text">
+        <h3>3. Brackish Water Aquaculture</h3>
+        <p>Brackish water aquaculture involves the farming of fish and shellfish in environments where freshwater and seawater mix, such as estuaries, mangroves, and coastal lagoons. This type of aquaculture is ideal for species that thrive in slightly salty water, including shrimp, milkfish, mud crabs, and seabass. Brackish water farming plays a vital role in seafood production, especially in tropical and coastal regions. Sustainable practices focus on maintaining water quality, preventing habitat destruction, and using eco-friendly feed to reduce environmental impact. Proper management of brackish water aquaculture helps support food security, local livelihoods, and marine ecosystem conservation.</p>
+        </div>
+    </div>
+
+    <div class="solution">
+		<img src="img3/Conceptual-diagram-of-an-integrated-multitrophic-aquaculture-IMTA-operation-including.png" alt="Conceptual diagram of an integrated multitrophic aquaculture (IMTA)">
+		<div class="solution-text">
+        <h3>4. Integrated Multi-Trophic Aquaculture (IMTA) </h3>
+        <p>Integrated Multi-Trophic Aquaculture (IMTA) is a sustainable aquaculture system that cultivates different species together in a way that mimics natural ecosystems. In IMTA, fish, shellfish, and seaweed are farmed in the same environment, allowing one species' waste to serve as nutrients for another. For example, fish produce organic waste that can be absorbed by shellfish and seaweed, reducing pollution and improving water quality. This approach enhances resource efficiency, minimizes environmental impact, and promotes biodiversity. IMTA helps create a more balanced and eco-friendly seafood production system while supporting economic and environmental sustainability.</p>
+        </div>
+    </div>
+
+    <div class="solution">
+		<img src="img3/download4.jpg" alt="Offshore aquaculture greenhouse gas emissions based on ocean net primary productivity">
+		<div class="solution-text">
+        <h3>5. Offshore Aquaculture</h3>
+        <p>Offshore aquaculture involves farming fish and other marine species in deep ocean waters, away from the coast. This method reduces environmental impact by allowing better water circulation, which helps prevent pollution buildup and disease outbreaks. Commonly farmed species in offshore aquaculture include salmon, tuna, and cobia. Sustainable offshore farming utilizes advanced technologies such as submersible cages and automated feeding systems to enhance efficiency and minimize ecological disruption. By reducing pressure on coastal ecosystems and wild fish populations, offshore aquaculture offers a promising solution for meeting global seafood demand while maintaining marine environmental health.</p>
+        </div>
+    </div>
+
+  
+</section>
+
+
+    <!-- Go to Top Button -->
+    <a href="#top" id="go-top">Go to Top</a>
+</main>
+
+			           
+
+			
+			<footer>
+            <div class="footer-content">
+            <div class="pageeditor" style="padding-bottom: 25px;">
+                <h2>Page Editors</h2>
+                <a href="pageEditor_ST1.html" target="_blank">Page Editor 1</a>
+				<a href="pageEditor_ST2.html" target="_blank">Page Editor 2</a>
+				<a href="pageEditor_ST3.html" target="_blank">Page Editor 3</a>
+				<a href="pageEditor_ST4.html" target="_blank">Page Editor 4</a>
+            </div>
+
+            <div class="styling">
+                <h2>Links</h2>
+                <a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a>
+                <a href="https://www.globalgoals.org/cookies/">Cookies</a>
+                <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a>
+                <a href="https://www.globalgoals.org/asset-licence/">Asset-Licence</a>
+				<p style="padding-top:40px; font-size: 17px;">"These links direct to Global Goals' policies for reference purposes only and do not imply official affiliation."</p>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2024 AquaHorizon. All rights reserved.</p>
+            </div>
+            </div>
+        </footer>
+    
+
+
+    <script src="script.js"></script>
+	
+</body>
+</html>

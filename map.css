@@ -1,0 +1,52 @@
+.sitemap {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 200px;
+    background-image: url('Img4/sm.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+	margin-right: -40px;
+}
+
+svg {
+    width: 100%;
+    height: 100vh;
+}
+
+.box4 {
+    fill: #1E90FF; /* Dodger Blue */  
+}
+
+.box4, .home-box{
+	stroke: white;
+	cursor: pointer;
+	transition: fill 0.3s;
+}
+
+.box4:hover {
+    fill: #00FFEF; /* Turquoise Blue */
+}
+
+.home-box {
+    fill: orange;
+    stroke-width: 2;   
+    
+}
+
+.home-box:hover {
+    fill: #FF4F00;
+}
+
+.sitemap text {
+    font-size: 18px;
+    font-weight: bold;
+    text-anchor: middle;
+    pointer-events: none;
+}
+
+.arrow{
+    stroke: white;
+    stroke-width: 2;
+    marker-end: url(#arrowhead);
+}

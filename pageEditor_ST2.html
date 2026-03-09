@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> <!-- External CSS link -->
+        <title></title>
+    </head>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+main {
+    flex: 3;
+}
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+section h3{
+    padding: 10px;
+    color: #007bff;
+}
+
+section p{
+    padding: 10px;
+}
+
+section ul{
+    padding-left: 80px;
+}
+
+header, footer {
+    text-align: center;
+    color: white; }
+
+.ref li{
+    list-style: none;
+    padding-bottom: 9px;
+}
+
+aside a{
+    text-decoration : none;
+}
+
+aside li{
+    padding-bottom: 4px;
+}
+
+.stud {
+    text-align: center;
+    line-height: 0;
+    background-color: #cbccc2ef;
+    color: white;
+    margin-top: 0%;
+    padding-top: 220px;
+}
+
+.top-level-ul{
+    padding: 10px;
+}
+
+.top-level-ul ul{
+    padding-left: 60px;
+}
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+        
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+img{
+    width: 90%;
+}
+
+</style>
+   
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <div class="header">
+        <div class="logo-container">
+            <img src="img2/logo.jpg" alt="AquaHorizon Logo" class="logo">
+            <div class="title-container">
+                <h1 class="title">AquaHorizon</h1>
+                <div class="vertical-line"></div>
+                <div class="subtitle-container">
+                    <span class="subtitle">"Keeping our oceans alive<br>for future generations!"</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Navigation Bar-->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="Table.html">Table</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="team.html">Team</a>
+        <a href="profile.html">User Profile</a>
+    </nav>
+
+    <section class="stud" id="top" id="home">
+        <h2>W.L.Amoda Sandasini Liyanage - Student 2</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+            <section>
+                <h2 >Home Page</h2>
+                    <h3>Technical Description</h3>
+                    <h3 style="color: black;"><b>Html structure</b></h3>
+                    <p> 1. The Header Section</p>
+                        <ul>
+                            <li>The header contains the logo, title, and subtitle of the webpage inside div.</li>
+                        </ul>
+                    <p> 2. Navigation-Bar Section</p>
+                        <ul>
+                            <li>This section contains the navigation links in the a tags.</li>
+                        </ul>
+
+                    <p> 3. Footer Section</p>
+                        <ul>
+                            <li>Page editor links of the all 4 students</li>
+                            <li>Styling and Policy Links of the website</li>
+                            <li>Copyright Information</li>
+                        </ul>
+
+                    <p> 4. The video Editor Section</p>
+                         <ul>
+                            <li>The div class="video-container" acts as a wrapper for the video background.</li>
+                            <li>The video tag is used as the background video that plays automatically (autoplay), loops indefinitely (loop), and remains muted (muted).</li>
+                            <li>The source tag provides the video file and its type (video/mp4).</li>
+                            <li>The div class="maintopic" contains the website's title and a welcome message.</li>
+                            <li> The a tag with class button1 creates a clickable button to guide users to more information.</li>
+                        </ul>
+
+                    <p> 5.  Topic Divider Section </p>
+                        <ul>
+                            <li>div class="topic-container" serves as a border.</li>
+                            <li>div class="topic-background" is styled to create a colored divider according to the website's theme.</li>
+                        </ul>
+
+                    <p> 6. Overview Section </p>
+                        <ul>
+                            <li> div class="overview" organizes content in a flexbox layout.</li>
+                            <li> div class="overview-content" contains headings (h2 tags) and paragraphs (p tags) to describe ocean conservation efforts.</li>
+                            <li> div class="overview-image" holds an image for the overview</li>
+                            <li> img tag used alt attribute for accessibility.</li>
+                        </ul>
+
+                    <p>7. Events Section</p>
+                       <ul>
+                           <li>div class="events" introduces planned activities organized by the poeple who own the website.</li>
+                           <li>The div class="row" uses flexbox to neatly arrange events in a structured way.</li>
+                       </ul>
+
+                    <p>8.  Mission Section</p>
+                       <ul>
+                           <li>div class="mission" creating a transparent box to write the mission.</li>
+                           <li>div class="mission-text" use h1 tag and p tag to write the title and the mission.</li>
+                           <li> div class="mission-image" holds the image for the right side of the box</li>
+                       </ul>
+
+                    <p>9. Section Devider and the Topic Section</p>
+                       <ul>
+                           <li>div class="section-divider" is a div acting as a visual separator for the webiste.</li>
+                           <li>div class="topic-container" wraps the topic section in a border.</li>
+                           <li>div class="topic-background" add the background for the specific border.</li>
+                           <li>div class="topic" contains the heading for the section.</li>
+                       </ul>
+
+                    <p>10. Team (Topics) Section</p>
+                       <ul>
+                           <li> div class="team" is the container for all topic thumbnails.</li>
+                           <li> div class="thumbnail" this representes each topic as a thumbnail box. </li>
+                           <li> img src="img2/marine_polution.jpg" alt="Corals" this image representation with alt text</li>
+                           <li> div class="details" contains heading and button for each topic</li>
+                           <li> button class="button1" a clickable button for open the specific content pages of all 4 students</li>
+                       </ul>
+
+                    <h3 style="color: black;"><b>Css Structure</b></h3>
+
+                    <p> 1.The logo and the title</p>
+                        <ul>
+                            <li>The logo is positioned on the top left side using margin</li>
+                            <li>The title,vertical-lineand the subtitle is placed right after the logo in the given order</li>
+                            <li>Used display: flex; to evenly distribute the items horizontally, and the header uses it to align the logo, title, and subtitle.</li>
+                        </ul>
+
+                    <p> 2. Navigation-Bar and Footer</p>
+                        <ul>
+                            <li>position: fixed;is  used in the header and navigation bar to keep them fixed at the top of the page while scrolling.</li>
+                            <li>Used flex-wrap: wrap; in navigation-bar and the footer so the items will wrap if necessary when resizing the browzer</li>
+                            <li>Used z-index: to ensure it stays above everything</li>
+                            <li>Used transition: background-color 0.3s to change the background-color smoothly after 0.3 seconds</li>
+                            <li>Used hover Effects to applied to the navigation links and footer  </li>
+                        </ul>
+                    
+                    
+                    <p>3.  Video Background Styling</p>
+                        <ul>
+                            <li>position: absolute;, top: 50%;, left: 50%;, and transform: translate(-50%, -50%); center the video within the container.</li>
+                            <li>width: 100%; and height: 100%; ensure full coverage</li>
+                            <li>object-fit: cover; makes sure the video fills its container without stretching </li>
+                            <li>z-index: -1; places the video behind other elements</li>
+                        </ul>
+
+                    <p> 4. Topic Divider Styling</p>
+                        <ul>
+                            <li>position: relative; ensures it stays within the document flow.</li>
+                            <li> width: 100%; covers the full page width.</li>
+                            <li> Applied a backgroud color to sepate the video and the overview content for the border</li>
+                        </ul>
+
+                    <p> 5. Overview Section Styling</p>
+                        <ul>
+                            <li> display: flex; is used to arrange text and image side by side.</li>
+                            <li> align-items: flex-start; ensures content aligns from the top.</li>
+                            <li> Appilid the text color to #ffffff so the text is highliged properly.</li>
+                        </ul>
+
+                    <p>6. Event Section Styling</p>
+                        <ul>
+                            <li>display: flex; in row class arranges event boxes horizontally.</li>
+                            <li>flex-basis: 31%; in event-col class ensures equal distribution within the row.</li>
+                            <li>background: #161717; gives each event block a sharp look.</li>
+                            <li>border: 1px solid #cce7ff; provides a sharp outline for user vision.</li>
+                        </ul>
+
+                    <p> 7.  Mission Section Styling</p>
+                        <ul>
+                            <li>position: relative; width: 1450px; height: 400px; this defines the mission section's size and position.</li>
+                            <li>border: 2px solid rgba(255, 255, 255, .5); border-radius: 20px; add a border and rounded corners</li>
+                            <li>backdrop-filter: blur(20px);It adds a glass-like effect to make text easier to read over background images.</li>
+                            <li>box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); Adds depth to the section by applying a shadow effect.</li>
+                            <li>display: flex; flex-wrap: wrap; Ensures the section adapts to different screen sizes</li>
+                        </ul>
+
+                    <p>8. Section Devidor and the Topic Section</p>
+                        <ul>
+                            <li>The divider is styled with a width of 100%, a height of 10px, and a dark blue background (#002855) to visually separate sections.</li>
+                            <li>border: 3px solid #84a6cf; this defines a border for the topic box</li>
+                            <li>width: 600px; height: 50px; this specifies the size for proper visibility</li>
+                            <li>display: flex; justify-content: center; align-items: center; this centers content both horizontally and vertically</li>
+                            <li>Add a background-color and a box-shadow</li>
+                        </ul>
+
+                    <p>9. Team (Topics) Section Styling</p>
+                        <ul>
+                            <li>display: flex; justify-content: center; flex-wrap: wrap; this ensures the topic thumbnails are flexible and center-aligned</li>
+                            <li>box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); this creates depth and a professional look</li>
+                            <li>border-radius: 10px; this applies rounded corners for a modern appearance</li>
+                            <li>object-fit: cover; that ensures images properly fill their containers without stretching</li>
+                        </ul>
+
+
+                    
+                    
+
+                    <h3 style="padding-top: 50px;">Accessibility</h3>
+                        <p>1. lang="en" in html tag which allows the people to recognized what language is used in this page</p>
+                        <p>2. HTML Structure focuses on (nav tag), (header tag), and (footer tag) to create a well-organized document that is easily navigable .</p>
+                        <p>3. Accessible Navigation Links:</p>
+                            <ul>
+                                <li>(href attribute) in a tags ensures that each link directs to the appropriate page. For example, the Home link points to home.html.</li>
+                                <li>"Page Editor 1" or "Privacy Policy" provides clear context about the content users can expect when clicking</li>
+                            </ul>
+                        <p>4. Color Choices</p>
+                             <ul>
+                                <li>using colors like black for the text color ensures that text is readable</li>
+                                <li>Buttons and links have contrasting hover effects that are visually noticeable</li>
+                             </ul>
+                        <p>5. Alt text for images</p>
+                            <ul>
+                                <li>The img tag in the header includes an alt attribute, which describes the image for users who rely on screen readers
+                                    or just in case if the photo doesnt load because of a technical difficulity.
+                                </li>
+                            </ul>
+
+                        <p>6. Responsiveness</p>
+                            <ul>
+                                <li>(@media Queries)adjust the layout for smaller screens. For example, the nav and header containers change layout when the 
+                                    screen width is smaller than 768px.</li>
+                            </ul>
+
+                    <h3  style="padding-top: 50px;">Link to the validation page</h3>
+                        <p id="table"><a href="validation_ST2.html#home">Home Page Validation Page</a></p> 
+
+                    <h3  style="padding-top: 50px;">Link to the page</h3>
+                        <p><a href="home.html">Home Page</a></p>
+            </section>
+
+            <section>
+                <h2 >Table</h2>
+                    <h3>Technical Description</h3>
+                    <h3 style="color: black;"><b>HTML Structure</b></h3>
+
+                    <p>1. Table Structure </p>
+                        <ul>
+                            <li>table tag organizes information into rows and columns</li>
+                            <li>thead tag groups the table headers to separate them from the body of the table</li>
+                            <li>tbody tag holds the main table data, keeping it separate from the headings</li>
+                            <li>th tag is used for column headings</li>
+                            <li>td tag  holds the actual content, including images and progress bars</li>
+                        </ul>
+
+                        <p>2. Images and Icons</p>
+                        <ul>
+                            <li>img tags are used to add relevant images while alt attribute used as an alternative text</li>
+                        </ul>
+
+                        <p>3. Progress Bars </p>
+                        <ul>
+                            <li>Used div class="progress"> to creates a container for the progress bar</li>
+                            <li>div class="progress-bar high/medium/low" indicates progress levels using CSS classes.</li>
+                        </ul>
+
+                       
+
+                    <h3 style="color: black;"><b>Css Structure</b></h3>
+
+                    <p>1. Table Structure Styling</p>
+                    <ul>
+                        <li>Used border-collapse: collapse; to remove the space between table borders, making them look like a single border instead of separate ones</li>
+                        <li>Used box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9); gives a  shadow effect for the table.</li>
+                        <li>Used background-color: #ffffff; for readability</li>
+                        <li>Used tr:nth-child(even) { background-color: #f0f8ff; } where it colors every second row of the table with a light background</li>
+                    </ul>
+                    
+                    <p>2. Images and Icons Styling</p>
+                    <ul>
+                        <li>Used width and height to ensure the size of the icon</li>
+                    </ul>
+
+                    <p>3. Progress Bars Styling</p>
+                    <ul>
+                        <li>In the class progress width and height provides a visual representation of progress.</li>
+                        <li>In the classes high,medium and low width and background-color assigns different colors based on impact levels.</li>
+                    </ul>
+
+                    <h3 style="padding-top: 50px;">Accessibility</h3>
+                    
+                    <p>1. Text Contrast and Readability</p>
+                    <ul>
+                        <li>Used high contrast colors like black and white to improve the readability</li>
+                        <li>Proper font sizes are used (font-size: 18px; for table content, font-size: 25px; for headings)</li>
+                    </ul>
+
+                    <p>2.  Alternative Text for Images</p>
+                    <ul>
+                        <li>Each img tag has an alt attribute describing the image</li>
+                    </ul>
+
+                    <p>3. Used hover effects </p>
+
+                    <h3 style="padding-top: 50px;">Link to the validation page</h3> 
+                        <p id="content2"><a href="validation_ST2.html#table">Table validation page</a></p> 
+
+                        
+                    <h3 style="padding-top: 50px;">Link to the page</h3>
+                        <p><a href="Table.html">Table</a></p>
+            </section>
+
+            <section>
+                <h2 >Content Page</h2>
+                    <h3>Technical Description</h3>
+                    <h3 style="color: black;"><b>Html structure</b></h3>
+                    <p>1. Main Section</p> 
+                       <ul>
+                           <li>Inside the class body1 div class="hero-section" works as the wrapper for this section</li>
+                           <li>div class="hero-content" contains the main heading and the small paragraph about the heading </li>
+                           <li>div class="hero-content" is used to contain the heading and paragraph </li>
+                           <li>div class="topics1" contains multiple navigation topics (div class="topic1"), each linking to a specific section of the page.</li>
+                           <ul>
+                               <li>div class="topic-number1"- numbered circular element.</li>
+                               <li>div class="topic-text1" - text link for navigation.</li>
+                           </ul>
+                           <li> Used IDs which navigate to specific topics when clicked while applying a hover effect</li>
+                        </ul>
+                    <p>2. 1st and the 4 th Topic</p>
+                        <ul>
+                            <li>The entire section is wrapped inside div class="body2", which provides a background image</li>
+                            <li>The div class="container" holds both the image and the text content.The box has a backdrop-filter: blur(10px); so it stands out from the main page.</li>
+                            <li>The img tag displays a resized image inside the box</li>
+                            <li>Inside div class="content-box" h1 tag hr tag and p tag are used to write the content of the topics</li>
+                        </ul>
+
+                        <p>3. 2nd Topic</p>
+                        <ul>
+                            <li>The entire section is wrapped inside div class="body2"</li>
+                            <li>The div class="container2" holds both the image and the text content.The box has a backdrop-filter: blur(10px); so it stands out from the main page.</li>
+                            <li>div class="image-grid" displays four marine ecosystem images, each with a title underneath.</li>
+                            <li>Each image is enclosed within a div class="image-item", ensuring a layout using the image tag</li>
+                            <li>Inside div class="content-box2" h1 tag hr tag are used</li>
+                            <li>Inside div class="explantion" p tag is used to write the content of the topics</li>
+                        </ul>
+
+                        <p>4. 3 rd Topic</p>
+                        <ul>
+                            <li>Its ths same as the 1st and 4 th topics.Only difference is the image-box is in the right side of topic 3 unlike topic 1 and 4</li>
+                        </ul>
+
+                        <p>5. Back to the Top Button</p>
+                        <ul>
+                            <li>In the class="top" inside the a tag there is a button containing an anchor link that scrolls back to the top of the page.</li>
+                        </ul>
+
+
+                    <h3 style="color: black;"><b>Css structure</b></h3>
+                    <p>1. Main section styling</p>
+                        <ul>
+                            <li>{background:; height:; and background:url(...);} entered a full page backgroud in .hero-section</li>
+                            <li>{display: flex; flex-direction: column; justify-content: center;} centers content vertically.</li>
+                            <li>Blurred the backgroud using {backdrop-filter: blur(10px);} in the .hero-content to create a glass like figure</li>
+                            <li>In topics1 class {position: absolute; top: 63%; right: 75px;} places the list of topics on the right side of the hero section.</li>
+                            <li>transform: translateY(-50%); ensures vertical alignment.</li>
+                            <li>In topic1 class {display: flex; align-items: center; gap: 10px}; arranges the number and the text side by side.</li>
+                            <li>{border-radius: 10px; and backdrop-filter: blur(10px);} maintain the glass like figure to right the topics</li>
+                            <li>In .topic-number1 class {width: 40px; height: 40px; border-radius: 50%;} to make the circle using a background-color</li>
+                            <li>In topic-text1 a use the color: white; for the clean look</li>
+                        </ul>
+
+
+                    <p>2. 1st and the 4 th Topic Styling</p>
+                        <ul>
+                            <li>In div class="body2" {background: url(...) no-repeat center center fixed;} this ensures a full-page background with a fixed effect</li>
+                            <li>{display: flex; justify-content: center; align-items: center;}  ensures the content remains in the center of the page</li>
+                            <li>In div class="container" {display: flex; align-items: center;} places the image and text side by side.</li>
+                            <li>From {border: 3px solid #b36b00; and backdrop-filter: blur(10px);} creates an orange border and a glass like effect</li>
+                            <li>With the specific width and height its gives rounded edges using border-radius: 15px; and a soft shadow from box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);</li>
+                            <li>In div class="content-box" used background: rgba(255, 255, 255, 0.2); provides a another box for readability.</li>
+                            <li>{font-size: 20px; line-height: 1.7; text-align: justify;} ensures the text is readable and well-spaced.</li>
+                            <li>In div class="content-box h1" and div class="content-box hr" color: #000e78; makes the heading stand out with a deep blue shade while hr tag visually separates sections</li>
+                        </ul>
+
+                    <p>3. 2nd Topic Styling</p>
+                        <ul>
+                            <li>In div class="container2" {display: flex; justify-content: center;} ensures the content is centered </li>
+                            <li>From {border: 3px solid #b36b00; and backdrop-filter: blur(10px);} creates an orange border and a glass like effect</li>
+                            <li>In div class="content-box2" used background: rgba(255, 255, 255, 0.2); provides a another box for readability while using text-align: center; to ensures the heading and grid remain aligned.</li>
+                            <li>In div class="content-box2 h1" and div class="content-box2 hr" color: #000e78; makes the heading stand out with a deep blue shade while hr tag visually separates sections</li></li>
+                            <li>In class="image-grid" {display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));} ensures a responsive grid layout.</li>
+                            <li>In class="image-item" use background to adds a light overlay, border-radius to smooths edge ,box-shadow to gives a subtle 3D effect and text-align: center; to aligns content properly.</li>
+                            <li>Inside the img tag with the specific width and height its gives rounded edges using border-radius: 8px; and object-fit: cover; to prevent images from stretching</li>
+                            <li>In div class="explanation" font-size,background and padding are used for readability</li>
+                        </ul>
+
+                        <p>5. Back to the Top Button</p>
+                        <ul>
+                            <li>Used position: fixed; bottom: 5%; right: 15px; to ensures the button stays in place while scrolling.</li>
+                            <li>Using the background-color: #007bff; and color: white; border-radius: 20px; it creates a button-like appearance.</li>
+                        </ul>
+
+
+                
+
+                    <h3 style="padding-top: 50px;">Accessibility</h3>
+                        <p>1. Text and Font</p>
+                           <ul>
+                               <li><b>Font Choices:-</b> this website uses Arial and sans-serif fonts, as they are clean, easy to read, and universally supported.</li>
+                               <li><b> Font Size:-</b> Headings and body text have been assigned appropriate sizes, with headings (h1) larger.</li>
+                               <li><b>Contrast:-</b>The color contrast is important. The text on light background sections (like .content-box, .hero-content, and .container) 
+                                    dark colors while texts on dark background sections (like.body1 and .body2) used light colors. </li>
+                           </ul>
+
+                           <p>2. Image Accessibility</p>
+                            <ul>
+                                <li>The img tag in the header includes an alt attribute, which describes the image for users who rely on screen readers
+                                    or just in case if the photo doesnt load because of a technical difficulity.
+                                </li>
+                            </ul>
+
+                           <p>3.  Interactive Elements:</p>
+                           <ul>
+                               <li><b>Buttons:-</b> Used the  “GO TOP” button at the bottom right of the page </li>
+                               <li><b>Hover Effects:-</b> Links change color when hovered which provides visual feedback.</li>
+                           </ul>
+
+                    <h3 style="padding-top: 50px;">Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p id="challenge"><a href="validation_ST2.html#content2">Content Page validation page</a></p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3 style="padding-top: 50px;">Link to the page</h3>
+                        <p><a href="content_ST2.html">Content Page </a></p>
+            </section>
+
+            <section>
+                <h2>Challenges and Lessons Learned</h2>
+                    <p>I ran into a few obstacles while our project was being implemented, but each one offered good teaching moments. 
+                        Managing the team as a leader was one of the main difficulties. Thankfully, all of my teammates were willing and 
+                        actively involved, so this was easier than expected. Their collaboration streamlined teamwork, enabling us to 
+                        assign responsibilities smoothly and maintain focus on our goals.</p> 
+
+                    <p>Creating the website's design by myself created another difficulty for me. In order to make sure the website was 
+                        both visually appealing and simple to use, I had to be familiar with both HTML and CSS. I had to experiment with
+                        various designs, layouts, and formatting methods because I didn't have much experience with web design. I 
+                        discovered through my own mistakes how to efficiently organize pages while improving our website's overall appearance.</p>
+            
+                    <p id="compliance">There was also a learning curve in finding a balance between practicality and appeal. It required 
+                        major planning to make sure that access was simple while keeping the design neat and interesting. In addition, 
+                        I had to make sure the website was responsive and available on various devices, which called for more edits and improvements.</p>
+            
+                    <p >All things thought out, these challenges have improved my ability to solve problems, increase my knowledge of web 
+                        design, and see the value of teamwork. Every challenge turned into a teaching moment, and by solving them, I 
+                        increased my confidence in my technical and leadership abilities.</p>
+            </section>
+
+            <section>
+                <h2> Compliance</h2>
+                <p>When creating my web pages, I ensured they followed the necessary guidelines for accessibility.</p>
+                <p>1. Accessibility</p>
+                   <ul>
+                       <li>I used proper HTML structure with (nav, header, footer)  tags to make the website easier to navigate. 
+                           I also included alt text for images so that visually impaired users can understand the content. Additionally, 
+                           I used high-contrast colors and readable fonts to improve visibility of my webpage.</li>
+                    </ul>
+
+                <p>2. Content Attribution</p>
+                   <ul>
+                       <li> Images, videos, and references used in my project are either created by me or sourced from platforms that allow 
+                             proper usage. I have credited resources like iStock, Vecteezy, and W3Schools in the references section.</li>
+                   </ul>
+
+                <p  id="ref">3. Data Privacy </p>
+                   <ul>
+                       <li> No sensitive user information is collected or stored on my pages</li>
+                   </ul>
+
+                <p>4. Compliance with Janet Web Regulations </p>
+                   <ul>
+                       <li>The website avoids harmful or misleading content and aligns with the Janet Acceptable Use Policy.
+                        This means no copyrighted material is used without permission</li>
+                   </ul>
+            </section>
+
+            <section>
+                <h2  class="ref">References</h2>
+                <p>Links to resources I used when making the website<br><br>
+                    <ul >
+                        <li>1. iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">Link to the istock</a> (Last accessed: 9 March 2025).</li>
+                        <li>2. Logo Maker. Available at: <a href="https://www.design.com/maker/logos/page1?text=AQUAHARMONY&isFromLogoHome=true#show-onboarding-modal">Link to the Logo Maker</a></li>
+                        <li>3. Vecteezy. Available at: <a href="https://www.vecteezy.com/free-videos/under-water">Link to Vecteezy</a></li>
+                        <li>4. W3 School. Available at: <a href="https://www.w3schools.com/css/default.asp">Link to W3 school</a></li>
+                        <li>5. Youtube Videos</li>
+                           <ul>
+                               <li>How To Create A Website using HTML & CSS | Step-by-Step Tutorial. Available at: <a href="https://youtu.be/CQZxeoQeo5c?feature=shared">Press Here</a></li>
+                               <li>How To Make Website Using HTML & CSS |Full Responsive Multi Page Website Design Step by Step. Available at: <a href="https://youtu.be/oYRda7UtuhA?feature=shared">Press Here</a></li>
+                               <li>How To Build a Responsive Travel Website using HTML and CSS | A Step-by-step Guide. Available at: <a href="https://youtu.be/TalusE29iqg?feature=shared">Press Here</a></li>
+                           </ul>
+                        <li>6. Lecture Slides</li>
+                        <ul>
+                            <li>Lecture Notes - Week1. Available at: <a href="https://learning.westminster.ac.uk/ultra/courses/_100151_1/outline/edit/document/_5174768_1?courseId=_100151_1&view=content&state=view">Link to week 1 lecture notes</a></li>
+                            <li>Lecture Notes - Week2. Available at:<a href="https://learning.westminster.ac.uk/ultra/courses/_100151_1/outline/edit/document/_5174770_1?courseId=_100151_1&view=content&state=view">Link to week 2 lecture notes</a></li>
+                            <li>Lecture Notes - Week3. Available at:<a href="https://learning.westminster.ac.uk/ultra/courses/_100151_1/outline/edit/document/_5174772_1?courseId=_100151_1&view=content&state=view">Link to week 3 lecture notes</a></li>
+                        </ul>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+            <ul class="top-level-ul" >
+                <li>Student 2</li>
+                    <ul >
+                        <li><a href="#home">Home page </a></li>
+                        <li><a href="#table">Table page</a></li>
+                        <li><a href="#content2">Content page</a></li>
+                    </ul>
+                
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="pageeditor" style="padding-bottom: 25px;">
+                <h2>Page Editors</h2>
+                <a href="pageEditor_ST1.html" target="_blank">Page Editor 1</a>
+                <a href="pageEditor_ST2.html" target="_blank">Page Editor 2</a>
+                <a href="pageEditor_ST3.html" target="_blank">Page Editor 3</a>
+                <a href="pageEditor_ST4.html" target="_blank">Page Editor 4</a>
+            </div>
+
+            <div class="styling">
+                <h2>Links</h2>
+                <a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a>
+                <a href="https://www.globalgoals.org/cookies/">Cookies</a>
+                <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a>
+                <a href="https://www.globalgoals.org/asset-licence/">Asset-Licence</a>
+                <p style="padding-top:40px; font-size: 17px;">"These links direct to Global Goals' policies for reference purposes only and do not imply official affiliation."</p>
+            </div>
+
+             <div class="copyright">
+                <p>&copy; 2024 AquaHorizon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+          
+
+                  

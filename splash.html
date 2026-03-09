@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Screen</title>
+    <link rel="stylesheet" href="splash.css">
+</head>
+<body>
+
+    <!-- Background Video -->
+    <video autoplay muted loop id="splashVideo">
+        <source src="img1/splashvid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Splash Container -->
+    <div class="splash-container">
+        
+		<div class="logo-container">
+			<img src="img1/logo.jpg" alt="Aqua Horizon Logo" class="logo">
+			<h1>AQUA HORIZON</h1>
+		</div>
+
+		
+        <p class="animated-text">Keeping our oceans alive for future generations!</p>
+
+        <!-- Mission Box -->
+        <div class="mission-box">
+            <p style="font-size:25px">"Our mission is to protect and preserve marine life for future generations and to create a healthier and more sustainable ocean environment."</p>
+        </div>
+	
+	<div class = "group-members" >
+		<h3 style="color:black">Group Members:</h3>
+        <p>Thanuvi Muthukumarana<br>Amoda Liyanage<br>Asadi Imasha<br>Manthisi Herath</p>
+	</div>
+
+        <button class="page-editor">Page Editor</button>
+
+        <!-- Animated Wave Loader -->
+        <div class="wave-loader">
+            <span class="wave"></span>
+            <span class="wave"></span>
+            <span class="wave"></span>
+            <p>Loading...</p>
+        </div>
+
+    </div>
+
+    <script>
+        // Redirect to home page after 4 seconds
+        setTimeout(function() {
+            window.location.href = "home.html"; 
+        }, 4000);
+    </script>
+
+</body>
+</html>

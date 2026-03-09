@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> <!-- External CSS link -->
+        <title></title>
+    </head>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+main {
+    flex: 3;
+}
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+section h3{
+    padding: 20px 10px;
+    color: #007bff;
+}
+
+section p{
+    padding: 10px;
+}
+
+section ul{
+    padding-left: 80px;
+}
+
+header, footer {
+    text-align: center;
+    color: white; }
+
+.ref li{
+    list-style: none;
+    padding-bottom: 9px;
+}
+
+aside a{
+    text-decoration : none;
+}
+
+aside li{
+    padding-bottom: 4px;
+}
+
+.stud {
+    text-align: center;
+    line-height: 0;
+    background-color: #cbccc2ef;
+    color: white;
+    margin-top: 0%;
+    padding-top: 220px;
+}
+
+.top-level-ul{
+    padding: 10px;
+}
+
+.top-level-ul ul{
+    padding-left: 60px;
+}
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+        
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+img{
+    width: 90%;
+}
+
+section img{
+    width: 100%;
+    height: 500px;
+}
+
+section h4{
+    padding-top: 20px;
+}
+
+
+
+</style>
+   
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <div class="header">
+        <div class="logo-container">
+            <img src="img2/logo.jpg" alt="AquaHorizon Logo" class="logo">
+            <div class="title-container">
+                <h1 class="title">AquaHorizon</h1>
+                <div class="vertical-line"></div>
+                <div class="subtitle-container">
+                    <span class="subtitle">"Keeping our oceans alive<br>for future generations!"</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Navigation Bar-->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="Table.html">Table</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="team.html">Team</a>
+        <a href="profile.html">User Profile</a>
+    </nav>
+
+    <section class="stud" id="top" id="home">
+        <h2 >W.L.Amoda Sandasini Liyanage - Student 2</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+            <section>
+                <h2 >Home Page validation report</h2>
+                    <p>While validating the home page I encountered a few minor errors.One of the main issues was that I forgot
+                       to include the href attribute in some a tags.I corrected this by ensuring all a tags had proper href values 
+                       linking to relevant pages.Another mistake was incorrectly closing the img tag with /, which is not the correct 
+                       syntax in HTML since img is a self-closing tag.</p> 
+                    
+                       <h4> Homepage HTML</h4>
+                    <img src="img2/validations/Homehtml.png">
+
+                    <h4> Homepage Css</h4>
+                    <img src="img2/validations/Homecss.png">
+
+                    <h4> Style Css</h4>
+                    <img src="img2/validations/stylecss.png">
+
+                <h3 id="table">Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST2.html#home">Student 2 Page Editor.</a></p>
+            </section>
+
+            <section>
+                <h2 id="table" style="margin-top: 40px;">Table Page validation report</h2>
+                <p>After running the validation checks for the pages I implemented, I was happy to find that there were no errors. 
+                   All the HTML and CSS elements were correctly structured, without any issues.</p>
+                
+                <h4> Table HTML</h4>
+                <img src="img2/validations/tablehtml.png">
+
+                <h4> Table Css</h4>
+                <img src="img2/validations/tablecss.png" >
+                                    
+                <h3  id="content2">Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST2.html#table">Student 2 Page Editor.</a></p>
+            </section></a></p>
+
+            <section>
+                <h2 style="padding-top: 40px;">Content Page validation report</h2>
+                <p>While validating the home page I encountered a few minor errors.One of the main issues was that I forgot
+                    to include the href attribute in some a tags.I corrected this by ensuring all a tags had proper href values 
+                    linking to relevant pages.Another mistake was incorrectly closing the img tag and the hr tag with /, which is 
+                    not the correct syntax in HTML since img is a self-closing tag. Additionally, I received a warning about using 
+                    multiple h1 tags on a page. Since h1 is meant to be the main heading, I adjusted the structure by replacing the 
+                    extra h1 tags with h2 tags</p>
+
+                <h4> Content_2 HTML</h4>
+                <img src="img2/validations/content_2html.png">
+
+                <h4> Content_2 Css</h4>
+                <img src="img2/validations/content_2css.png">
+                                    
+                <h3>Back to Page Editor page</h3>
+                    <p><a href="pageEditor_ST2.html#content2">Student 2 Page Editor.</a></p>
+            </section></a></p>
+
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+            <ul class="top-level-ul">
+                <li>Student 2</li>
+                    <ul>
+                        <li><a href="#home">Home page </a></li>
+                        <li><a href="#table">Table page</a></li>
+                        <li><a href="#content2">Content page</a></li>
+                    </ul>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="pageeditor" style="padding-bottom: 25px;">
+                <h2>Page Editors</h2>
+                <a href="pageEditor_ST1.html" target="_blank">Page Editor 1</a>
+                <a  href="pageEditor_ST2.html" target="_blank">Page Editor 2</a>
+                <a  href="pageEditor_ST3.html" target="_blank">Page Editor 3</a>
+                <a  href="pageEditor_ST4.html" target="_blank">Page Editor 4</a>
+            </div>
+
+            <div class="styling">
+                <h2>Links</h2>
+                <a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a>
+                <a href="https://www.globalgoals.org/cookies/">Cookies</a>
+                <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a>
+                <a href="https://www.globalgoals.org/asset-licence/">Asset-Licence</a>
+                <p style="padding-top:40px; font-size: 17px;">"These links direct to Global Goals' policies for reference purposes only and do not imply official affiliation."</p>
+
+             </div>
+
+             <div class="copyright">
+                <p>&copy; 2024 AquaHorizon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

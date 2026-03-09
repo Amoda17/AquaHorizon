@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="map.css">
+	
+
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="header">
+			<div class="logo-container">
+				<img src="img4/logo.jpg" alt="AquaHorizon Logo" class="logo">
+				<div class="title-container">
+					<h1 class="title">AquaHorizon</h1>
+					<div class="vertical-line"></div>
+					<div class="subtitle-container">
+						<span class="subtitle">"Keeping our oceans alive<br>for future generations!"</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Navigation Bar --!>
+		<nav>
+			<a  href="home.html">Home</a>
+			<a  href="table.html">Table</a>
+			<a  href="volunteer.html">Volunteer</a>
+			<a  href="feedback.html">Feedback</a>
+			<a  href="sitemap.html" class="active">Sitemap</a>
+			<a  href="team.html">Team</a>
+			<a  href="profile.html">User Profile</a>
+	    </nav>
+	</div>
+
+	<div class="sitemap">
+	<h2 style="color: white;"><b><u>Website Site Map</u></b></h2>
+
+	<svg viewBox="0 0 1400 900">
+		<defs>
+			<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+				<polygon points="0 0, 10 3.5, 0 7" fill="white"/>
+			</marker>
+		</defs>
+
+		<!-- Splash Screen --!>
+		<a href="splash.html"><rect class="box4" x="600" y="50" width="200" height="50"/><text x="700" y="80">Splash Screen</text></a>
+
+		<!-- Home Page --!>
+		<a href="home.html"><rect class="home-box" x="575" y="180" width="250" height="70" rx="10" ry="10"/><text x="700" y="220" style="font-size: 26; font-weight:bold;">Home</text></a>
+
+		<!-- Main Sections --!>
+		<a target="content.html"><rect class="box4" x="50" y="350" width="150" height="50"/><text x="125" y="380">Content</text></a>
+		<a href="table.html"><rect class="box4" x="250" y="350" width="150" height="50"/><text x="325" y="380">Table</text></a>
+		<a href="volunteer.html"><rect class="box4" x="450" y="350" width="150" height="50"/><text x="525" y="380">Volunteer</text></a>
+		<a href="feedback.html"><rect class="box4" x="650" y="350" width="150" height="50"/><text x="725" y="380">Feedback</text></a>
+		<a href="team.html"><rect class="box4" x="850" y="350" width="150" height="50"/><text x="925" y="380">Team</text></a>
+		<a href="profile.html"><rect class="box4" x="1050" y="350" width="150" height="50"/><text x="1125" y="380">User Profile</text></a>
+		<a target="editor.html"><rect class="box4" x="1250" y="350" width="150" height="50"/><text x="1325" y="380">Page Editor</text></a>
+
+		<!-- Content Subtopics --!>
+		<a href="content_ST1.html"><rect class="box4" x="50" y="500" width="150" height="50" rx="50%" ry="50%"/><text x="125" y="530">Topic 1</text></a>
+		<a href="content_ST2.html"><rect class="box4" x="50" y="570" width="150" height="50" rx="50%" ry="50%"/><text x="125" y="600">Topic 2</text></a>
+		<a href="content_ST3.html"><rect class="box4" x="50" y="640" width="150" height="50" rx="50%" ry="50%"/><text x="125" y="670">Topic 3</text></a>
+		<a href="content_ST4.html"><rect class="box4" x="50" y="710" width="150" height="50" rx="50%" ry="50%"/><text x="125" y="740">Topic 4</text></a>
+		
+		<!-- Editor Subtopics --!>
+		<a href="pageEditor_ST1.html"><rect class="box4" x="1250" y="500" width="150" height="50" rx="50%" ry="50%"/><text x="1325" y="530">Page Editor 1</text></a>
+		<a href="pageEditor_ST2.html"><rect class="box4" x="1250" y="570" width="150" height="50" rx="50%" ry="50%"/><text x="1325" y="600">Page Editor 2</text></a>
+		<a href="pageEditor_ST3.html"><rect class="box4" x="1250" y="640" width="150" height="50" rx="50%" ry="50%"/><text x="1325" y="670">Page Editor 3</text></a>
+		<a href="pageEditor_ST4.html"><rect class="box4" x="1250" y="710" width="150" height="50" rx="50%" ry="50%"/><text x="1325" y="740">Page Editor 4</text></a>
+
+		<!-- Arrows --!>
+		<line class="arrow" x1="700" y1="100" x2="700" y2="175"/>  <!-- Splash to Home --!>
+		<line class="arrow" x1="700" y1="250" x2="210" y2="345"/>  <!-- Home to Content --!>
+		<line class="arrow" x1="700" y1="250" x2="410" y2="345"/>  <!-- Home to Table --!>
+		<line class="arrow" x1="700" y1="250" x2="610" y2="345"/>  <!-- Home to Volunteer --!>
+		<line class="arrow" x1="700" y1="250" x2="715" y2="345"/>  <!-- Home to Feedback --!>
+		<line class="arrow" x1="700" y1="250" x2="840" y2="345"/>  <!-- Home to Team --!>
+		<line class="arrow" x1="700" y1="250" x2="1040" y2="345"/> <!-- Home to User Profile --!>
+		<line class="arrow" x1="700" y1="250" x2="1240" y2="345"/> <!-- Home to Page Editor --!>
+		<line class="arrow" x1="125" y1="400" x2="125" y2="475"/>  <!-- Content to Topics --!>
+		<line class="arrow" x1="1325" y1="400" x2="1325" y2="475"/>  <!-- Page Editor to Subtopics --!>
+		
+		
+	</svg>
+	</div>
+	
+	<footer>
+		<div class="footer-content">
+			<div class="pageeditor" style="padding-bottom: 25px;">
+				<h2>Page Editors</h2>
+				<a  href="pageEditor_ST1.html" target="_blank">Page Editor 1</a>
+				<a  href="pageEditor_ST2.html" target="_blank">Page Editor 2</a>
+				<a  href="pageEditor_ST3.html" target="_blank">Page Editor 3</a>
+				<a  href="pageEditor_ST4.html" target="_blank">Page Editor 4</a>
+			</div>
+
+			<div class="styling">
+				<h2>Links</h2>
+				<a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a>
+                <a href="https://www.globalgoals.org/cookies/">Cookies</a>
+                <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a>
+                <a href="https://www.globalgoals.org/asset-licence/">Asset-Licence</a>
+				<p style="padding-top:40px; font-size: 17px;">"These links direct to Global Goals' policies for reference purposes only and do not imply official affiliation."</p>
+
+			 </div>
+
+			 <div class="copyright">
+				<p>&copy; 2024 AquaHorizon. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

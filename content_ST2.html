@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>AquaHorizon - Protecting Marine Biodiversity</title>
+  <style>
+
+  * {
+      margin: 0;
+      padding: 0; }
+
+  .body1 {
+      font-family: Arial, sans-serif;
+      color: white;
+      box-sizing: border-box; }
+
+  .hero-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url(img2/content1.jpeg) no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 50px;
+      box-sizing: border-box;
+      opacity: 0.9; }
+
+  .hero-content {
+      max-width: 600px;
+      padding: 20px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      background:transparent;
+      border: 2px solid rgba(255, 255, 255, 0.3); 
+      margin-top: 200px;}
+
+  .hero-content h2 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      text-align: center; }
+
+  .hero-content p {
+      font-size: 25px;
+      line-height: 1.6;
+      text-align: center; }
+
+  .topics1 {
+      position: absolute;
+      top: 63%;
+      right: 75px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 40px; }
+
+  .topic1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 20px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      background:transparent;
+      width: 600px; }
+
+  .topic-number1 {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: black;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem; }
+
+  .topic-text1 {
+      font-size: 25px;
+      font-weight: bold; }
+
+  .topic-text1 a {
+      color: white; /* Change text color to white */
+      text-decoration: none; /* Remove underline */ }
+
+  .topic-text1 a:hover {
+      color: rgb(90, 170, 235); /* Slight color change on hover */ }
+
+
+  .body2 {
+      background: url(img2/content2.jpeg) no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-size: cover; 
+      opacity: 0.9;
+      box-sizing: border-box; }
+
+  .container {
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 3px solid #b36b00;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      padding: 15px;
+      width: 90%;
+      max-width: 1200px;
+      box-sizing: border-box; 
+      margin-bottom: 130px;}
+
+  .image-box img {
+      width: 350px;
+      height: 52vh;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      margin-right: 20px; }
+
+  .content-box {
+      flex: 1;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); }
+
+  .content-box h2 {
+      font-size: 35px;
+      color: #000e78;
+      text-align: center;
+      margin-bottom: 15px; }
+
+  .content-box hr {
+      border: none;
+      border-top: 2px solid #ccc;
+      margin-bottom: 15px; }
+
+  .content-box p {
+      font-size: 20px;
+      line-height: 1.7;
+      color: #191919;
+      font-weight: bold;
+      text-align: justify; }
+    
+  .container1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Space between content and image */
+      background: rgba(255, 255, 255, 0.1);
+      border: 3px solid #b36b00;
+      border-radius:15px;
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      width: 90%;
+      max-width: 1200px;
+      box-sizing: border-box;
+      flex-direction: row; /* Ensure the items are in a row */ 
+      margin-bottom: 50px;}
+
+  .content-box1 {
+      flex: 1; /* Take up remaining space */
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+      margin-right: 20px; /* Space between text and image */ }
+
+  .image-box1 {
+      flex-shrink: 0; /* Prevent the image from shrinking */ }
+
+  .image-box1 img {
+      width: 400px;
+      height: 60vh;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      margin-right: 0; /* Remove left margin */ }
+  
+  .content-box1 h2 {
+      font-size: 35px;
+      color: #000e78;
+      text-align: center;
+      margin-bottom: 15px; }
+
+  .content-box1 hr {
+      border: none;
+      border-top: 2px solid #ccc;
+      margin-bottom: 15px; }
+
+  .content-box1 p {
+      font-size: 20px;
+      line-height: 1.7;
+      color: #191919;
+      font-weight: bold;
+      text-align: justify; }
+
+  .container2 {
+      display: flex;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 3px solid #b36b00; /* Orange border */
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      padding: 15px;
+      width: 90%;
+      max-width: 1200px;
+      box-sizing: border-box;
+      margin-bottom: 130px; }
+
+  .content-box2 {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center; }
+
+  .content-box2 h2 {
+      color: #000e78;
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 15px; }
+
+  .content-box2 hr {
+      border: none;
+      border-top: 2px solid #fff;
+      margin-bottom: 15px; }
+
+  .content-box2 p {
+      font-size: 20px;
+      line-height: 1.7;
+      color: #191919;
+      font-weight: bold;
+      text-align: justify; }
+
+  .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));/* 
+      Creates as many columns as will fit in the container. Each column has a minimum width of 150px and will stretch to take up available space, 
+      with a maximum width of 1fr (a fraction of the available space). */
+      gap: 15px;
+      margin: 20px 0; }
+
+  .image-item {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center; }
+
+  .image-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px; }
+
+  .image-item p {
+      margin-top: 8px;
+      font-weight: bold;
+      color: #333; }
+
+  .explanation {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #222;
+      text-align: justify;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px; }
+
+  .copyright p {
+      font-size: 14px;
+      padding: 20px; }
+
+  .top {
+    position: fixed;
+    bottom: 5%;
+    right: 15px; }
+        
+  .top a {
+    padding: 10px 30px; /* Adds padding for button-like feel */
+    background-color: #007bff;
+    color: white; 
+    text-decoration: none; 
+    border-radius: 20px; 
+    font-size: 16px; 
+    font-weight: bold;  }
+
+  .top a:hover {
+    background-color: #0056b3; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);  }
+      
+      </style>
+  </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="logo-container">
+                    <img src="img2/logo.jpg" alt="AquaHorizon Logo" class="logo">
+                    <div class="title-container">
+                        <h1 class="title">AquaHorizon</h1>
+                        <div class="vertical-line"></div>
+                        <div class="subtitle-container">
+                            <span class="subtitle">"Keeping our oceans alive<br>for future generations!"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Navigation Bar-->
+            <nav>
+                <a href="home.html" >Home</a>
+                <a href="Table.html" >Table</a>
+                <a href="volunteer.html" >Volunteer</a>
+                <a href="feedback.html" >Feedback</a>
+                <a href="sitemap.html" >Sitemap</a>
+                <a href="team.html" >Team</a>
+                <a href="profile.html" >User Profile</a>
+            </nav>
+
+            <section class="body1" id="top">
+                <div class="hero-section">
+                  <div class="hero-content">
+                    <h2>Biodiversity</h2>
+                    <p><b>Protecting biodiversity means preserving the balance of nature. 
+                       Join the global effort to sustain life and protect our planet's rich ecosystems.</b></p>
+                  </div>
+              
+                  <div class="topics1">
+                    <div class="topic1">
+                      <div class="topic-number1">1</div>
+                      <div class="topic-text1"> <a href="#importance">Importance of Marine Biodiversity</a></div>
+                    </div>
+
+                    <div class="topic1">
+                      <div class="topic-number1">2</div>
+                      <div class="topic-text1"><a href="#Types">Types of Marine Ecosystems</a></div>
+                    </div>
+                    <div class="topic1">
+                      <div class="topic-number1">3</div>
+                      <div class="topic-text1"><a href="#Threats">Threats to Marine Biodiversity</a></div>
+                    </div>
+                    <div class="topic1">
+                      <div class="topic-number1">4</div>
+                      <div class="topic-text1" id="importance"><a href="#protect">How We Can Protect Marine Biodiversity </a></div>
+                    </div >
+                  </div>
+                </div>
+            </section >
+            
+            <div class="body2">
+                <div class="container">
+                  <div class="image-box">
+                    <img src="img2/marine_biodiversity_resized.jpg" alt="marine biodiversity">
+                  </div>
+                  <div class="content-box">
+                    <h2>Importance of Marine Biodiversity</h2>
+                    <hr>
+                    <p >
+                      Marine biodiversity plays a vital role in maintaining the health and balance of the oceans.
+                      It includes a wide range of living organisms, from tiny plankton to massive whales, all of
+                      which contribute to the stability of marine ecosystems. Healthy oceans are essential for 
+                      human survival, as they provide food, livelihoods, and recreational opportunities for millions
+                      of people worldwide. Ecosystems such as coral reefs and mangroves act as natural barriers, 
+                      protecting coastlines from erosion, storms, and flooding. They also serve as nurseries for 
+                      many marine species, ensuring the continuation of marine life. Additionally, the ocean plays
+                      a crucial role in regulating the Earth's climate by absorbing large amounts of carbon dioxide,
+                      which helps mitigate the effects of global warming. <b id="Types"></b></p>
+                    </div>
+                </div>
+            </div>
+      
+            <div class="body2" >
+              <div class="container2">
+                <div class="content-box2">
+                  <h2>Types of Marine Ecosystems</h2>
+                  <hr>
+              
+                  <!-- Image grid -->
+                  <div class="image-grid">
+                    <div class="image-item">
+                      <img src="img2/istockphoto-598177472-1024x1024.jpg" alt="Coral reefs">
+                      <p>Coral Reefs</p>
+                    </div>
+                    <div class="image-item">
+                      <img src="img2/mangroves.jpg" alt="Mangroves">
+                      <p>Mangroves</p>
+                    </div>
+                    <div class="image-item">
+                      <img src="img2/deepseajpg.jpg" alt="Deep Sea">
+                      <p>Deep Sea Ecosystem</p>
+                    </div>
+                    <div class="image-item">
+                      <img src="img2/seagrassbed.jpg" alt="sea grass bed">
+                      <p>Sea Grass Bed</p>
+                    </div>
+                  </div>
+              
+                  <!-- Explanation paragraph -->
+                  <p class="explanation">
+                    The ocean is home to various ecosystems, each supporting a diverse range of species. Coral reefs,
+                    often referred to as the "rainforests of the sea," are among the most diverse ecosystems on the planet.
+                    Despite covering less than 1% of the ocean floor, they provide shelter and breeding grounds for about 
+                    25% of all marine species. Mangroves are coastal forests that thrive in salty waters and play a critical
+                    role in protecting shorelines from erosion while offering safe habitats for fish, crabs, and birds.
+                    Deep-sea ecosystems, located in the darkest parts of the ocean, host fascinating creatures that have 
+                    adapted to survive in extreme conditions with little to no sunlight. These ecosystems remain largely 
+                    unexplored but are crucial for understanding the full scope of marine biodiversity. Seagrass beds are 
+                    another important ecosystem, serving as feeding grounds for marine animals like turtles and manatees while 
+                    also improving water quality by filtering pollutants and stabilizing sediments. <b  id="Threats"></b></p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="body2">
+              <div class="container1">
+                <div class="content-box1">
+                  <h2>Threats to Marine Biodiversity</h2>
+                  <hr>
+                  <p>Despite its importance, marine biodiversity faces numerous threats due to human activities. Pollution is one
+                    of the biggest challenges, with millions of tons of plastic waste entering the oceans each year. This waste
+                    harms marine life, as animals often mistake plastic for food or become entangled in debris. Chemical pollutants
+                    and oil spills further damage ecosystems and poison marine species. Overfishing is another major threat, as the
+                    excessive harvesting of fish disrupts food chains and leads to the depletion of key species. Climate change
+                    exacerbates these issues, causing ocean temperatures to rise, which leads to coral bleaching and shifts in marine
+                    habitats. Warmer waters also affect the migration patterns and reproductive cycles of marine animals. Habitat
+                    destruction, caused by coastal development, pollution, <b id="protect"></b>and destructive fishing practices like bottom trawling,
+                    leads to the loss of crucial ecosystems that many species rely on for survival.</p>
+                </div>
+                <div class="image-box1">
+                  <img src="img2/deadfish.jpg" alt="dead fish">
+                </div>
+              </div>
+            </div>
+
+            <div class="body2">
+              <div class="container">
+                <div class="image-box">
+                  <img src="img2/protectsea.jpg" alt="Protect the sea">
+                </div>
+                <div class="content-box">
+                  <h2>How We Can Protect Marine Biodiversity</h2>
+                  <hr>
+                  <p>
+                    Protecting marine biodiversity requires collective effort and sustainable actions. One of the simplest ways 
+                    individuals can help is by reducing plastic use to prevent ocean pollution. Avoiding single-use plastics, 
+                    recycling properly, and participating in local clean-up events can make a significant difference. Supporting
+                    sustainable fishing practices by choosing seafood from certified sources helps ensure fish populations remain
+                    healthy and ecosystems are not overexploited. Participating in beach cleanups removes harmful waste from coastal
+                    areas, preventing it from entering the ocean and endangering marine life. Raising awareness through education and 
+                    community programs encourages others to appreciate the importance of marine biodiversity and take action to protect 
+                    it. Governments and organizations also play a crucial role by implementing policies to reduce pollution, regulate 
+                    fishing, and conserve marine habitats. Together, these efforts can help preserve the rich diversity of life below 
+                    water for future generations.</p>
+                </div>
+              </div>
+            </div>
+
+            <p class="top"><a href="#top">Go Top</a></p>
+          
+            <footer>
+                <div class="footer-content">
+                    <div class="pageeditor" style="padding-bottom: 25px;">
+                        <h2>Page Editors</h2>
+                        <a href="pageEditor_ST1.html" target="_blank">Page Editor 1</a>
+                        <a href="pageEditor_ST2.html" target="_blank">Page Editor 2</a>
+                        <a href="pageEditor_ST3.html" target="_blank">Page Editor 3</a>
+                        <a href="pageEditor_ST4.html" target="_blank">Page Editor 4</a>
+                    </div>
+
+                    <div class="styling">
+                        <h2>Links</h2>
+                        <a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a>
+                        <a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a>
+                        <a href="https://www.globalgoals.org/cookies/">Cookies</a>
+                        <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a>
+                        <a href="https://www.globalgoals.org/asset-licence/">Asset-Licence</a>
+                        <p style="padding-top:40px; font-size: 17px;">"These links direct to Global Goals' policies for reference purposes only and do not imply official affiliation."</p>
+                    </div>
+
+                    <div class="copyright">
+                        <p> &copy; 2024 AquaHorizon. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+     </body>
+</html>

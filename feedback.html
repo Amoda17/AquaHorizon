@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-y: auto;
+			background :url("New folder\video.mp4");
+        background-size:cover;	
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px 20px 80px; /* Add padding to avoid overlap with header and footer */
+            max-width: 800px;
+            margin: 0 auto;
+        }
+		/* Container for the form */	
+    
+	.container {
+		width: 480px;
+		padding: 25px;
+		background: rgba(244, 236, 247    , 0.9);
+		border-radius: 10px;
+		box-shadow: 0 0 18px rgba(0, 0, 0, 0.2);
+		text-align: center;
+	}
+	
+	h2 {
+		text-align: center;
+		margin-bottom: 18px;
+	}
+	
+	h6{
+	    text-align: center;
+		margin-bottom: 14px;
+	    color:#ec7063  ;
+		font-weight: bold;
+	}
+	   
+	
+	label {
+		font-weight: bold;
+		display: block;
+		margin-top: 12px;
+		text-align: left;
+	}
+	form {
+		width: 50%; 
+		margin: auto; 
+		display: flex;
+		flex-direction: column; 
+		align-items: center;
+		padding: 10px;
+		background-color:#d6eaf8 ;
+		border-radius: 14px;
+		box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+	}
+
+	/* Form input fields */
+	input, select, textarea {
+		width: 100%;
+		padding: 10px;
+		margin: 14px 0;
+		border: 2px solid #d6eaf8 ;
+		border-radius: 12px;
+		box-sizing: border-box;
+	}
+	/* Rating stars layout */
+	.stars {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		margin: 10px 0;
+	}
+	
+	.stars input {
+		display: none;
+	}
+	
+	.stars label {
+		font-size: 30px;
+		color: #ccc;
+		cursor: pointer;
+		transition: color 0.3s ease-in-out;
+		padding: 5px;
+	}
+	
+	.stars input:checked ~ label,
+		.stars label:hover,
+		.stars label:hover ~ label {
+			color: gold;
+	}
+	/* Submit and Reset buttons */	
+    .submit-btn {
+		width: 60%;
+		padding: 12px;
+		background: #007BFF;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 16px;
+		margin-top: 15px;
+	}
+	
+	.reset-btn {
+		width: 60%;
+		padding: 12px;
+		background: #007BFF;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 16px;
+		margin-top: 15px;
+	}
+	
+	.submit-btn:hover {
+        background: #0000ff;
+    }
+	
+	.reset-btn:hover {
+        background: #0000ff;
+    }
+	  /* Layout for checkbox and radio groups */
+	.checkbox-group {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 8px 0;
+	}
+	
+	.radio-group {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 8px 0;
+	}
+	
+	/* Buttons layout */
+	.button {
+        display: flex;
+	    justify-content:space-between;
+		width:100%;
+		margin-top:15px;
+	}
+	
+	.submit-btn, .reset-btn{
+	    width:48%;
+	}
+	#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+	/* Styling for legend */
+ 
+	legend {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #566573 ;
+}
+
+        
+
+    </style>
+</head>
+<body>
+    <!-- Fixed Header with logo and title -->
+      <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <div class="header">
+        <div class="logo-container">
+            <img src="img3/logo.jpg" alt="AquaHorizon Logo" class="logo">
+            <div class="title-container">
+                <h1 class="title">AquaHorizon</h1>
+                <div class="vertical-line"></div>
+                <div class="subtitle-container">
+                    <span class="subtitle">"Keeping our oceans alive<br>for future generations!"</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Navigation Bar-->
+    <nav>
+		<a href ="home.html" >Home</a>
+		<a href="Table.html">Table</a>
+		<a href="volunteer.html">Volunteer</a>
+		<a href="feedback.html" class="active">Feedback</a>
+		<a href="sitemap.html">Sitemap</a>
+		<a href="team.html" >Team</a>
+		<a href="profile.html">User Profile</a>
+	</nav>
+
+    <!-- Main Content -->
+    <main>
+        <form id="feedbackForm">
+            <h2><strong>Feedback Form</strong></h2>
+            <h6>Required fields*</h6>
+            <!-- Add your form fields here -->
+        </form>
+    </main>
+	        <form>
+		    <h2><strong>Feedback Form</strong></h2>
+			<h6>Required fields*</h6>
+			<!-- Personal Details Section -->
+				<fieldset class="personal details">
+					<legend>Personal Details</legend>
+					<div class="container">
+						<label for="fullname"><span style="color:red;">*</span> Full Name:</label>
+						<input type="text" id="fullname" name="fullname" required>
+						
+						<label for="email"> <span style="color:red;">*</span> Email Address:</label>
+						<input type="email" id="email" name="email" required>
+						
+						<label for="address">Address:</label>
+						<input type="text" id="address" name="address" required>
+						
+						<label for="tel">Telephone Number:</label>
+						<input type="tel"  id="tel" name="tel" required>
+					</div>
+			</fieldset>
+			
+			<br>
+			<!-- Feedback Section -->
+			<fieldset>
+			        <legend><strong>Feedback Details</strong></legend>
+					<div class="container">
+					     <label for="Comments">Comment or message:</label>
+                        <textarea id="Comments" maxlength="500" placeholder="500 characters remaining"></textarea>
+
+			             
+						<label for="category">select a category:</label>
+						<select id="category" name="category">
+						    <option value ="General Inquiry">General Inquiry</option>
+							<option value ="Suggestion">Suggestion</option>
+							<option value ="Complaint">Complaint</option>
+						</select>
+						
+						<label for="inputTopicsList">Relevant Topics:</label><br>
+						<input name="topicsList" list="topicsList" id="inputTopicsList">
+						<datalist id="topicsList">
+						    <option value="UX">User Experience</option>
+							<option value="Functionality">Functionality</option>
+							<option value="Performance">Performance</option>
+						</datalist>
+					
+							
+						<label>How satisfied are you with our services?</label>
+						<div class="stars">
+							<input type="radio" name="rating" id="star1" value="1"><label for="star1">&#9733;</label>
+							<input type="radio" name="rating" id="star2" value="2"><label for="star2">&#9733;</label>
+							<input type="radio" name="rating" id="star3" value="3"><label for="star3">&#9733;</label>
+							<input type="radio" name="rating" id="star4" value="4"><label for="star4">&#9733;</label>
+							<input type="radio" name="rating" id="star5" value="5"><label for="star5">&#9733;</label>
+						</div>
+						
+						<label for="datetime">select Date & time:</label>
+						<input type="datetime-local" id="datetime" name="datetime">
+						
+						<label for="file">Upload a File or Screenshot:</label>
+						<input type="file" id="file" name="file">
+				    </div>	
+			</fieldset>
+			<br>
+			<!-- Preferences Section -->
+			<fieldset>
+			    <legend><strong>Preferences</strong></legend>
+			    <div class="container">
+                    <div class="checkbox-group">
+						<label>*Notification Preferences:</label>
+						<label><input type="checkbox" id="emailNotify" name="notify" value="email"> Email</label>
+						<label><input type="checkbox" id="smsNotify" name="notify" value="sms"> SMS</label>
+                    </div>
+
+                    <div class="radio-group">
+						<label>Would you recommend us?</label>
+						<label><input type="radio" id="yes" name="recommend" value="yes"> Yes</label>
+						<label><input type="radio" id="no" name="recommend" value="no"> No</label>
+					</div>
+                </div>
+			</fieldset>
+
+                <!-- Submit and Reset Buttons -->
+                <div class="button">
+					<input type="Submit" class="submit-btn" value="Submit">
+					<input type="Reset" class="reset-btn" value="Reset">
+			    </div>
+            
+				
+			
+            
+            
+        </form>
+		
+		<script>
+			document.getElementById('comment').addEventListener('input', function () {
+				let remaining = 500 - this.value.length;
+				document.getElementById('charCount').textContent = remaining + ' characters remaining';
+			});
+			document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+            let email = document.getElementById('email');
+            let tel = document.getElementById('tel');
+            
+            document.getElementById('emailError').style.display = email.validity.valid ? 'none' : 'block';
+            document.getElementById('telError').style.display = tel.validity.valid ? 'none' : 'block';
+            
+            if (!email.validity.valid || !tel.validity.valid) {
+                event.preventDefault();
+            }
+        });
+        </script>
+		<!-- Background Video -->
+		<video autoplay muted loop id="bg-video">
+        <source src="img3/video.mp4" type="video/mp4">
+         
+        </video>
+
+    <!-- Fixed Footer -->
+         <footer>
+                <div class="footer-content">
+                    <div class="pageeditor" style="padding-bottom: 25px;">
+                        <h2>Page Editors</h2>
+                        <div class="navbar">
+							<a href="pageEditor_ST1.html" target="_blank">Page Editor 1</a>
+							<a href="pageEditor_ST2.html" target="_blank">Page Editor 2</a>
+							<a href="pageEditor_ST3.html" target="_blank">Page Editor 3</a>
+							<a href="pageEditor_ST4.html" target="_blank">Page Editor 4</a>
+                    </div>
+
+                    </div>
+
+                    <div class="styling">
+                        <a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a>
+                <a href="https://www.globalgoals.org/cookies/">Cookies</a>
+                <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a>
+                <a href="https://www.globalgoals.org/asset-licence/">Asset-Licence</a>
+				<p style="padding-top:40px; font-size: 17px;">"These links direct to Global Goals' policies for reference purposes only and do not imply official affiliation."</p>
+                     </div>
+
+                     <div class="copyright">
+                        <p>&copy; 2024 AquaHorizon. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>

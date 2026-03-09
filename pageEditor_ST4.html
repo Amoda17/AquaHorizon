@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> <!-- External CSS link -->
+        <title>pageEditor_ST4</title>
+    </head>
+    <style>
+	
+body{
+	font-family: Arial,sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header, footer{
+	text-align: center;
+	color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+main {
+    flex: 3;
+}
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+section h3{
+    padding: 10px;
+}
+
+section p{
+    padding: 10px;
+}
+
+.ref li{
+    list-style: none;
+    padding-bottom: 9px;
+}
+
+aside a{
+    text-decoration : none;
+}
+
+aside li{
+    padding-bottom: 4px;
+}
+
+.stud {
+    text-align: center;
+    line-height: 0;
+    background-color: #cbccc2ef;
+    color: white;
+    margin-top: 0%;
+    padding-top: 220px;
+}
+
+.top-level-ul{
+    padding: 10px;
+}
+
+.top-level-ul ul{
+    padding-left: 60px;
+}
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+        
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+img{
+    width: 90%;
+}
+
+
+
+
+</style>
+   
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <div class="wrapper">
+		<div class="header">
+			<div class="logo-container">
+				<img src="img4/logo.jpg" alt="AquaHorizon Logo" class="logo">
+				<div class="title-container">
+					<h1 class="title">AquaHorizon</h1>
+					<div class="vertical-line"></div>
+					<div class="subtitle-container">
+						<span class="subtitle">"Keeping our oceans alive<br>for future generations!"</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--Navigation Bar-->
+		<nav>
+			<a  href="home.html">Home</a>
+			<a  href="table.html">Table</a>
+			<a  href="volunteer.html">Volunteer</a>
+			<a  href="feedback.html">Feedback</a>
+			<a  href="sitemap.html">Sitemap</a>
+			<a  href="team.html">Team</a>
+			<a  href="profile.html">User Profile</a>
+	    </nav>
+	</div>
+
+    <section class="stud" id="top">
+        <h2>Manthisi Aranima Herath, Student 4</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+			
+			<!-- Usre Profile --!>
+            <section>
+                <h2 id="profile">Profile Page</h2>
+                    <h3>Technical Description</h3>
+						<p>HTML Structure:</p>
+                        <p>The User Profile Page is built using various HTML elements to create a clear and organized layout. 
+						The main container (&lt;div class="userP"&gt;) holds all profile related content. While the &lt;h1&gt; tag 
+						displays the page title, &lt;h2&gt; and &lt;h3&gt; tags organize subheadings. "Bio," "Skills," 
+						"Goals," and "Experience are some of them." The &lt;p&gt; tag presents descriptive content, such as the user's biography, ensuring readability and structure.</p> 
+						<p>The profile section is created using &lt;div class="profile-container"&gt;, which contains a nested 
+						&lt;div class="profile-info"&gt; that holds the user's profile picture (&lt;img&gt;), name, and a short 
+						personal quote. Personal details such as occupation, age, course, and year of study, are organized using 
+						&lt;ul&gt; and &lt;li&gt; elements, ensuring a clear and structured display.</p>
+						<p>With using &lt;div class="skills"&gt;, and each skill section is been created with each skill is inside &lt;div class="skill"&gt;. 
+						Skill names are listed using an unordered list (&lt;ul&gt;), while proficiency levels are visually displayed With 
+						progress bars (&lt;div class="progress"&gt;). In addition, thses bars follow inline style to shape their appearence.</p>
+						<p>The "Experience" section is placed inside a &lt;div&gt; with the class "experience." An &lt;h3&gt; tag is used to 
+						introduce the section, and an unordered list (&lt;ul&gt;) organizes the experiences. For additional details, nested lists are used within each experience item.</p>
+						<p>To structure the content in the "Un Goals" section, which uses a &lt;div&gt; container with the  class "un-goals". Each goal has been displayed with an 
+						&lt;img&gt; tag, which includes an alt attribute for accessibility, that help screen readers to describe the images.</p>
+						<p>The volunteering section contain a calendar (&lt;div class="calendar"&gt;), which organized using a grid layout to display 
+						the days of the month. Moreover, event details such as title, date, time, location, and reminder settings, are presented in event 
+						cards (&lt;div class="event-card"&gt;),that provides a clear and organized view of upcoming events.</p>
+						<p>The contact section (&lt;div class="contact"&gt;) contains a form with &lt;input&gt; fields for the user's name and 
+						email, and a &lt;textarea&gt; for the message. The form submission is managed using the mailto: attribute, enabling direct email communication.</p>
+						<p>CSS Techniques:</p>
+						<p>Layout and Positioning: The layout is organized using flexbox and grid to ensure a clean, well-aligned design. 
+						The .profile-container uses display: flex; with justify-content: center; to horizontally align the profile details. 
+						The .calendar section uses display: grid; with grid-template-columns: repeat(7, 1fr); to create a layout where each column 
+						evenly represents a day of the week. This ensures that the days are arranged neatly across the calendar.</p>
+						<p>Background and Visual Design: Sections such as .skills, .bio, .goals, .experience, and .volunteering have a clean white background with rounded 
+						edges(border-radius: 10px;) and soft shadows (box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);) to create a polished look. The .profile-info section 
+						stands out with a light blue background (background-color: #E0F7FA;), setting it apart from the rest of the content. To enhance user interaction, 
+						hover effects are applied to multiple sections, changing the background color to #caf0f8;. The .progress bars visually represent skill levels by adjusting 
+						the width dynamically (width: X%;).</p>
+						<p>Text Styling: The typography is set with font-family: Arial, sans-serif; to ensure a clean and easy-to-read appearance. Headings are centered using text-align: center;, 
+						creating a balanced look. Additionally, the content within .profile-info is styled with line-height: 2; to improve readability by making the text more spaced out and easier to follow.</p>
+						<p>Buttons and Interactivity: The event card includes small icons next to the event details (&lt;img&gt; inside .event-detail), arranged using display: flex; to ensure the 
+						text aligns properly with the images. The contact form features a fixed-width button to maintain a consistent look and feel across the page, ensuring that interactive elements are visually uniform.</p>
+                    
+                    <h3>Accessibility</h3>
+                        <p>Alt Text for Images: All images, such as the profile picture (&lt;img src="Img4/Avata.png" alt="profile picture"&gt;) and UN goals (&lt;img src="Img4/UN14.png" alt="Goal 1"&gt;), include 
+						descriptive alt attributes to give context and ensure accessibility for users with visual impairments. This helps users understand the content and purpose of the images.</p>
+						<p>Semantic HTML Elements: Headings (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;) establish a clear content hierarchy, assisting screen readers. Lists (&lt;ul&gt;, &lt;li&gt;) 
+						organize information effectively.</p>
+						<p>Hover and Focus States: Hover effects highlight clickable sections, while focus states on buttons enhance usability for assistive technology users.</p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST4.html#user">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="profile.html">Include a link to the actual page you describe.</a></p>
+            </section>
+			
+			<!-- Sitemap --!>
+            <section>
+                <h2 id="sitemap">Sitemap Page</h2>
+                    <h3>Technical Description</h3>
+						<p>HTML Structure:</p>
+                        <p>Semantic HTML elements like &lt;h2&gt; for section headings to create a clear content 
+						structure. It also includes &lt;svg&gt; to visually display the sitemap, making it easier to understand the website’s layout.</p> 
+						<p>Navigation is implemented using <a> tags, allowing users to access different sections of the website efficiently.</p>
+						<p>The page uses SVG elements such as &lt;rect&gt;, &lt;text&gt;, and &lt;line&gt; to create a visual sitemap. The &lt;line&gt; elements are styled with 
+						arrow markers to indicate the connections between different sections. This visual approach provides a clear, graphical representation 
+						of the website's structure, making it easier for users to understand the site’s organization.</p>
+						<p>CSS Techniques:</p>
+						<p>Background and Layout: The .sitemap class uses background-image: url('Img4/sm.jpg'); along with background-size: cover; and background-attachment: fixed; 
+						to create an attractive background that remains in place as users scroll. This approach enhances the layout by providing a consistent and immersive visual experience throughout the page.</p>
+						<p>Styling and Interaction: The .box4 and .home-box classes both include the properties stroke: white;, cursor: pointer;, and transition: fill 0.3s;, 
+						which make these elements interactive. When users hover over these elements, their colors change, providing visual feedback that enhances the overall user experience.</p>
+						<p>Typography and Visibility: The .sitemap text class uses font-size: 24px; and font-weight: bold; to make the text easy to read. The text-anchor: middle; centers the text, while 
+						pointer-events: none; ensures that the text doesn’t interfere with clickable elements, like the interactive SVG boxes, enhancing the overall user experience.</p>
+
+                    <h3>Accessibility</h3>
+                        <p>Semantic HTML: The use of semantic HTML elements like &lt;h2&gt;, &lt;a&gt;, and &lt;svg&gt; improves accessibility for screen readers. These elements help create a 
+						clear structure for the sitemap, making it easier for assistive technol</p>
+						<p>Text Clarity: The use of bold font styles and larger text sizes ensures that the text is easy to read. In addition, the color changes on hover such as the .box4:hover color 
+						change, provide visual cues, making interactive elements more accessible for users with low vision or color</p>
+						<p>SVG Sitemap Navigation: The visual SVG-based sitemap, created using &lt;svg&gt;, &lt;rect&gt;, &lt;text&gt;, and &lt;line&gt;, offers an 
+						alternative navigation method for users who may struggle with traditional menus. The &lt;line&gt; elements include arrow markers (marker-end: url(#arrowhead);), 
+						providing clear visual connections between sections. This structured design improves navigation, helping users understand section relationships and find content more efficiently.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST4.html#map">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="sitemap.html">Include a link to the actual page you describe.</a></p>
+            </section>
+			
+			<!-- Content Page_Topic 4_Climatic Change and Its impact on Oceans --!>
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+						<p>HTML Structure: </p>
+                        <p>The code uses several crucial HTML elements need to organize the page's content. These include 
+						&lt;div&gt;, &lt;h1&gt;, &lt;p&gt, and &lt;a&gt; tags, which assist both users and browsers easily 
+						to get the idea of the page structure, especially to screen readers, those who have visual impairment.</p> 
+						<p>The &lt;h1&gt, &lt;h2&gt;, and &lt;p&gt; tags define the headings and paragraphs that has been making it easy 
+						to follow the content with a clear structure.</p>
+						<p>Lastly, the &lt;a&gt; tags that are used for links, allowing users to interact with the page and navigate 
+						to other sections. For instance, the 'Go Back' button uses an &lt;a&gt; tag to scroll back to the top of the page.</p>
+						<p>CSS Techniques: </p>
+						<p>Layout and Positioning: The page layout is created using flexbox to position elements clearly and organised. The .container 
+						is set up using a flexbox with a vertical layout, which means the items are arranged one on top of the other. In addition, 
+						paragraphs (.paragragh) are set to display as flex, and are aligned in a row by using align-items: center, allowing text and 
+						images to sit side by side. Absolute positioning is used to place elements exactly where they are needed on the page. For example, 
+						the .nav-section is positioned with a specific distance from the left (250px), placing the heading in a fixed spot. Inside the 
+						.nav-section, the .nav-container is positioned to make sure the navigation buttons are aligned correctly.</p>
+						<p>Text Styling: Different font sizes and styles are used for headings like h1 and h2 to make the content easy to read and 
+						create a clear visual structure. Text alignment is adjusted by centering the main title and navigation links, while paragraphs 
+						are aligned to be justified, making them easier to read. The color property ensures the text stands out and is easily read against various backgrounds.</p>
+						<p>Backgrounds and Visual Design: Backgrounds and visual design use images and gradients to make the page more appealing. The .nav-section has 
+						a background image (background-image: url('Img4/bcpic.jpeg')) with background-size: cover, which ensures the image fits nicely across the container 
+						without getting stretched. The .paragragh uses a gradient background (linear-gradient(#4f4080, #9553ff)) with two colors to make it 
+						more visually interesting. Some sections, like the text in .nav-section p, use a semi-transparent white background (rgba(255, 255, 255, 0.8)) 
+						to help the text stand out and be easier to read over the image.</p>
+						<p>Buttons and Interactivity: The "go back" button (.back-button) is set to position: fixed, which keeps it visible at the bottom-left of the page, even when the user scrolls.</p>
+						<p>The properties like background-image, background-size, and background-position are used to add images to sections and ensure 
+						they fit properly. flex, align-items, and justify-content help arrange the content flexibly, ensuring everything is aligned correctly on the page. 
+						The properties text-align, font-size, font-weight, and color control how the text appears, making it easy to read and well-organized. The 
+						positioning properties position: absolute and position: fixed allow elements to be placed in specific locations on the page, no matter what the 
+						rest of the layout looks like. Finally, the hover effect has help users see which element they are click over by changing its color to making it easier to identify and interact with.</p>
+						
+
+                    <h3>Accessibility</h3>
+                        <p>Alt Text for Images: The alt attribute is added to all images (e.g., &lt;img src="asidification.jpg" alt="Ocean Acidification"&gt;). This describes the image for users with visual 
+						impairments who use screen readers, helping them understand what it represents.</p>
+						<p>Semantic HTML: Using semantic HTML tags like &lt;h1&gt;, &lt;h2&gt;, and &lt;p&gt; helps screen readers understand the page layout, which making it easier to access the content for users 
+						with disabilities. Headings like &lt;h1&gt; for the main title and &lt;h2&gt; for subheadings create a clear structure, which helps screen reader users navigate the page more easily.</p>
+						<p>Navigation and Links: The navigation buttons inside the .nav-container provide useful internal links. For instance, &lt;a href="#Ocean-Acidification" class="nav-button" 
+						&gt;Ocean Acidification&lt;/a&gt; which making easy to move the specific section on the same page. This is especially helpful for users who rely on keyboard navigation or assistive technologies.</p>
+						
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST4.html#cont-4">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content_ST4.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+			<!----!>
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>After adding the header and footer, which were created by Student 2, to the web pages, I 
+					encountered some problems.The bodies of the two pages collapsed. To resolve this, I placed 
+					all my code (which had been between the header and footer) inside another class. Instead of 
+					calling the body and h1 for styling, I applied the class. This solved the issue.</p>
+					<p> When I implemented the sitemap, I tried using text-align: center; to align the names of the 
+					website pages, but it did not function. After researching, I found that text-align does not work 
+					on SVG elements. According to w3Schools, the text-anchor attribute can be used instead.</p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>I used both semantic and non-semantic HTML with proper contrast between text 
+					and background to enhance readability. To avoid syntax errors, the HTML and CSS 
+					of the webpages I am responsible for pass W3C validation. There is no harmful 
+					information present. In accordance with Janet’s security policies, there is no 
+					room for unauthorized tracking scripts.</p> 
+
+                    
+            </section>
+
+			<!----!>
+            <section>
+                <h2 id="ref">References</h2>
+                <p><br><br> 
+                    <ul class="ref">
+                        <li>GreatStack. (2023).<i> How To Make Full Screen Scrolling Website Using HTML And CSS.</i> YouTube. Available at: <a href="https://youtu.be/KAG5wNPdoTw?si=HSaeZ6LKQK6Bg3Vl" target="_blank">https://youtu.be/KAG5wNPdoTw.</a></li>
+                        <li>Pexels.<i>Images.</i> <a  href="https://www.pexels.com/" target="_blank"> https://www.pexels.com.</a></li>
+						<li>University of Westminster. (2025). <i>4COSCO11C.2 Lecture Notes on Web Design and Development - Week 2: HTML Lists, CSS for Lists, HTML Tables, CSS for Tables, CSS Box Model.</i> </li>
+						<li>University of Westminster. (2025). <i>4COSCO11C.2 Lecture Notes on Web Design and Development - Week 3: HTML Images, Links and Special Characters, CSS for Links, Images, CSS Positioning.</i> </li>
+						<li>University of Westminster. (2025). <i>4COSCO11C.2 Lecture Notes on Web Design and Development - Week 4: HTML Forms.</i> </li>
+						<li>University of Westminster. (2025). <i>4COSCO11C.2 (2025) Lecture Notes on Web Design and Development - Week 5 :SVG.</i> </li>
+						<li>W3Schools.<i>SVG in HTML.</i><a href="https://www.w3schools.com/graphics/svg_inhtml.asp" target="_blank">https://www.w3schools.com/graphics/svg_inhtml.asp.</a></li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul" >
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                
+                <li>Student 4</li>
+                    <ul>
+                        <li><a href="#profile">Profile page </a></li>
+                        <li><a href="#sitemap">Sitemap page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="pageeditor" style="padding-bottom: 25px;">
+                <h2>Page Editors</h2>
+                <a  href="pageEditor_ST1.html" target="_blank">Page Editor 1</a>
+				<a  href="pageEditor_ST2.html" target="_blank">Page Editor 2</a>
+				<a  href="pageEditor_ST3.html" target="_blank">Page Editor 3</a>
+				<a  href="pageEditor_ST4.html" target="_blank">Page Editor 4</a>
+            </div>
+
+            <div class="styling">
+				<h2>Links</h2>
+				<a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a>
+                <a href="https://www.globalgoals.org/cookies/">Cookies</a>
+                <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a>
+                <a href="https://www.globalgoals.org/asset-licence/">Asset-Licence</a>
+                <p style="padding-top:40px; font-size: 17px;">"These links direct to Global Goals' policies for reference purposes only and do not imply official affiliation."</p>
+            </div>
+
+             <div class="copyright">
+                <p>&copy; 2024 AquaHorizon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

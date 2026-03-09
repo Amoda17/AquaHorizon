@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"> <!-- External CSS link -->
+		
+		
+        <title></title>
+    </head>
+    <style>
+
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+main {
+    flex: 3;
+}
+aside {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+section h3{
+    padding: 10px;
+}
+
+section p{
+    padding: 10px;
+}
+
+.ref li{
+    list-style: none;
+    padding-bottom: 9px;
+}
+
+aside a{
+    text-decoration : none;
+}
+
+aside li{
+    padding-bottom: 4px;
+}
+
+.stud {
+    text-align: center;
+    line-height: 0;
+    background-color: #cbccc2ef;
+    color: white;
+    margin-top: 0%;
+    padding-top: 220px;
+}
+
+.top-level-ul{
+    padding: 10px;
+}
+
+.top-level-ul ul{
+    padding-left: 60px;
+}
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+        
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+img{
+    width: 90%;
+}
+
+</style>
+   
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <div class="header">
+        <div class="logo-container">
+            <img src="img1/logo.jpg" alt="AquaHorizon Logo" class="logo">
+            <div class="title-container">
+                <h1 class="title">AquaHorizon</h1>
+                <div class="vertical-line"></div>
+                <div class="subtitle-container">
+                    <span class="subtitle">"Keeping our oceans alive<br>for future generations!"</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Navigation Bar-->
+    <nav>
+        <a href ="home.html">Home</a>
+        <a href="Table.html">Table</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+        <a href="team.html">Team</a>
+        <a href="profile.html">User Profile</a>
+    </nav>
+
+    <section class="stud" id="top">
+        <h2>Thanuvi Muthukumarana, Student 1</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="home">Splash Screen</h2>
+                    <h3>Technical Description</h3>
+                        <p><b>1.FullScreen setup</b> - <br> <span style="color: DarkBlue;">body and html tags </span>: These define the full structure of the page.<br>
+                           <span style="color: DarkBlue;"> meta name="viewport" </span>: Ensures responsive behavior on different screen sizes.
+						   <ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						   <li><span style="color: DarkBlue;">height: 100%; width: 100%; </span> - Makes sure the entire viewport is covered.</li>
+                           <li><span style="color: DarkBlue;">display: flex; justify-content: center; align-items: center; </span> - Centers all elements in the viewport.</li>
+                           <li><span style="color: DarkBlue;">overflow: hidden; </span> - Prevents scrolling to maintain a clean fullscreen effect.</li>
+						   </ul>
+						</p>
+						
+						<p><b>2.Background Video</b> - <br>The source attribute in html is used here to define the video file and format.
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;">position: fixed; top: 0; left: 0; </span> -  Ensures that the video in place across all screen sizes.</li>
+						<li><span style="color: DarkBlue;">width: 100%; height: 100%;</span> - Ensures full coverage of the screen.</li>
+						<li><span style="color: DarkBlue;">z-index: -2; </span> - Places the video behind all other content.</li> 
+						</ul> </p>
+						
+						<p><b>3.Dark Overlay</b> - <br> The dark overlay is used for readability. A Class is defined as "overlay" by class attribute using the div element in html. A semi transparent layer over the vidoe is created for better readability.
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;"> background: rgba(0, 0, 0, 0.5)</span> - A dark overlay is created with 50% opacity for better text readability.</li>
+						<li><span style="color: DarkBlue;"> z-index: -1 </span> - Overlay is placed above the video but behind the text.</li>
+						</ul></p>
+						
+						<p><b> 4.Wave Loader for Visual Feedback</b> - <br> Class attribute in html is used here to create the class "wave-loader", which Contains the wave animation and "Loading..." text. Each animated wave is represented by using the class "wave" using a span element.
+						
+						<p><b> 5.Animated text </b> - <br>
+						The phrase "Keeping our oceans alive for future generations!" is animated here for more visual engagement. A class called "animated-text" is defined to contain the animated text.
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;">fadeSlide Animation makes the text fade in and slide up.</li>
+						<li><span style="color: DarkBlue;">float Animation is used to create a bouncing effect.</li></p>
+						
+						<p><b>  6.Mission Statement Box </b> - <br>
+						Mission staetement is highlighted within a semi-transparent box by forming a class attribute named "mission-box".
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;"> background: rgba(255, 255, 255, 0.8); - Creates a semi-transparent box.</li>
+						<li><span style="color: DarkBlue;">border-radius: 10px;- Gives rounded corners for a modern look.</li></p>
+						
+						<p><b> 7.Automatic Redirect to Home Page </b> - <br>
+						For automatic redirection java script concepts are used .
+						<ul><span style="color: #641e16;">Key java script Properties </span>-:
+						<li><span style="color: DarkBlue;"> setTimeout(function(){window.location.href = "home.html";</span> - This will be redirected to home page after 4 seconds. This ensures seamless transition without manual input.
+ 
+						
+                    <h3>Accessibility</h3>
+                        <p style="text-align:justify;">The title and mission statement use high-contrast colors (white text on a dark overlay) to ensure readability. A glow animation is used for the title to enhance visibility without excessive motion The dark overlay on the video background ensures that white text remains readable. The mission box and group members box have a semi-transparent background with good contrast against text. The splash screen automatically redirects, but users with slower assistive technologies are not blocked from accessing the homepage.</p>
+						
+                    
+                    <h3>Link to the validation page</h3> 
+                        <p><a href="validation_ST1.html#splashVal">Click here to go to the validation page.</a></p> 
+
+                    <h3>Link to the page</h3>
+                        <p><a href="splash.html" >Click here to view the Splashscreen of our website.</a></p>
+            </section>
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                        <p><b>The Volunteer Page of AquaHorizon is designed with a clear structure, interactive features, and user-friendly navigation. It effectively encourages participation in ocean conservation efforts through well-organized sections, visually appealing elements, and responsive design.</b> <br>
+						<p><b> 1.Page Structure and Layout</b></br> The Volunteer Page is structured to provide an engaging experience, allowing users to explore different volunteer opportunities.
+						<ul><span style="color: #641e16;">Key Html tags </span>-:
+						<li><span style="color: DarkBlue;"> <"header"> tag </span> -  Contains the website’s navigation and branding for consistency.</li>
+						<li><span style="color: DarkBlue;"> <"main"> tag </span> -  Wraps all the main content to separate it from the navigation and footer.</li>
+						<li><span style="color: DarkBlue;"> <"section"> tag </span>- Organizes different parts of the page, such as the introduction, projects, and reviews.</li>
+						<li><span style="color: DarkBlue;"> <"h1"> to <"h3"> tags </span>- Defines a clear heading hierarchy, improving readability.</li>
+						<li><span style="color: DarkBlue;"> <"button"> tag </span>- Allows users to join volunteer activities with a clear call-to-action.</li>
+						</p>
+						<p>
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;"> background: rgba(255, 255, 255, 0.8);</span>- applies a semi-transparent overlay for a clean design.</li>
+						<li><span style="color: DarkBlue;"> display: flex; and display: grid;</span>- for responsive alignment of content.</li>
+						<li><span style="color: DarkBlue;"> padding: 20px;</span> - provides spacing for better readability and organization.</li>
+						</p> 
+						
+						<p><b>2.Volunteer Introduction Section</b></br> A welcoming and informative first impression is created by this volunteer introduaction section.
+						<ul><span style="color: #641e16;">Key Html tags </span>-:
+						<li><span style="color: DarkBlue;"> <"div">element</span>: Wraps text elements for styling and alignment.</li>
+						<li><span style="color: DarkBlue;"> <"h1"> tag </span>: Displays the main title “Volunteer with AquaHorizon”.</li>
+						</P>
+						
+					    <p>
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;"> margin-top: 200px;</span> -  ensures the content appears below the navigation bar.</li>
+						<li><span style="color: DarkBlue;">font-size: 45px; font-weight: bold;</span> -  highlights the call to action.</li>
+						</p>
+						
+						<p><b>3.Volunteer Programs and Scrollable Section</b><br> The scrollable section is used to allow users to explore multiple volunteer activities without cluttering the page.
+						<ul><span style="color: #641e16;">Key Html tags </span>-:
+						<li><span style="color: DarkBlue;"> <"section"> tag</span> - Groups related volunteer projects together.</li>
+						<li><span style="color: DarkBlue;"> <"div class=card"></span> - Wraps each volunteer opportunity, providing clear separation.</li>
+						<li><span style="color: DarkBlue;"> <"button"> tag </span> A button is there in each volunteer programme created with hover effects which allows users to join a program or donate.</li>
+						</p>
+						
+						<p>
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;">display: grid; with grid-template-columns: repeat(2, 1fr);</span> - organizes the projects into a responsive grid layout. </li>
+						<li><span style="color: DarkBlue;"> max-height: 500px; overflow-y: auto;</span> - enables smooth vertical scrolling.</li>
+						</p>
+						
+						<p><b>4. Sorting Feature for Volunteer Projects</b><br>A dropdown menu is used here to allow users to sort volunteer opportunities by popularity, recent activities, or impact.
+						<ul><span style="color: #641e16;">Key Html tags </span>-:
+						<li><span style="color: DarkBlue;"> <"select"> tag </span> - Allows users to choose sorting options.</li>
+						<li><span style="color: DarkBlue;"> <"label"> tag</span> - Provides a description for the sorting dropdown.</li>
+						<li><span style="color: DarkBlue;"> <"option"> tag </span> - Lists different sorting choices like “Most Popular”, “Most Recent”, "high impact".</li>
+						</p>
+						<p>
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;"> border: 1px solid #ccc; border-radius: 5px;</span> - keeps the dropdown visually clean.</li>
+						</p>
+						
+						<p><b>5. Sorting Feature for Volunteer Projects</b><br> The reviews section allows users to share their experiences, making the page more interactive and credible.Emojis are used to provide feeback easily.
+						<ul><span style="color: #641e16;">Key Html tags </span>-:
+						<li><span style="color: DarkBlue;"> <"div class=reviews-section"></span> - Wraps all reviews inside a dedicated container.</li>
+						<li><span style="color: DarkBlue;"> <"textarea"> tag </span> - Provides an input box for submitting feedback. </li>
+						<li><span style="color: DarkBlue;"> <"button"> tag </span> - Allows users to send their reviews.</li>
+						</p>
+						<p>
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;"> background: #f9f9f9; padding: 15px; border-radius: 10px;</span> - creates clean and modern review cards.</li>
+						<li><span style="color: DarkBlue;"> max-width: 300px; </span> - ensures consistent card sizing.</li>
+						</p>
+						
+						<p><b>6. Social Media Campaigns and Donations Section</b><br>The part includes social media initiatives and donation options to increase community engagement.
+						<ul><span style="color: #641e16;">Key Html tags </span>-:
+						<li><span style="color: DarkBlue;"> <"ul"> tag </span>- Used to create an unordered list to choose different participation options for users.</li>
+						<li><span style="color: DarkBlue;"> <"input type=number"> </span> - Allows users to enter a number as the donation amount.</li>
+						</p>
+						<p>
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;"> transition: transform 0.3s ease-in-out;</span> -  Adds smooth hover effects.</li>
+						<li><span style="color: DarkBlue;"> hover: transform: scale(1.05); </span> -  subtly increases button size on hover for interactivity.</li>
+						
+						</p>
+						
+						
+                    <h3>Accessibility</h3>
+                        <p style="text-align:justify;"> Alt Text for Images (alt="")is used if an image does not load, the alt text provides context. Descriptive alt text ensures screen readers can communicate the image's purpose. Dark text on a on light background improves readability. Labels help screen readers identify form elements. Without labels, users may not understand the purpose of a dropdown or input fields. Uses CSS media queries to adjust layout for smaller screens which makes the webpage responsive and mobile-friendly.</p>
+
+                    <h3>Link to the validation page</h3> 
+                        <p><a href="validation_ST1.html#volunteerVal" >Click here to go to the validation page.</a></p> 
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="volunteer.html" >Click here to view the Volunteer Page of our website.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p><b> 1.Page Structure and Layout</b></br> The content page follows a logical HTML structure to ensure readability, accessibility, and smooth navigation. 
+						<ul><span style="color: #641e16;">Key Html tags </span>-:
+						<li><span style="color: DarkBlue;"> <"main"> tag </span> - Wraps the primary content, separating it from navigation and footer sections.</li>
+						<li><span style="color: DarkBlue;"> <"body">tag </span> - Contains all the visible content of the webpage. Inside the body, sections are divided logically with <'div'>, <'section'>, <'h1'>, <'h2'>, and <'p'> tags.</li>
+						<li><span style="color: DarkBlue;"> <"section"> tag </span> -  Used for different thematic content blocks like Introduction, Causes, Effects, and Solutions. These sections provide clear separation for different topics.</li>
+						<li><span style="color: DarkBlue;"> <"img"> tag </span> - Displays images with alt attributes for accessibility.</li>
+						<li><span style="color: DarkBlue;"> <"h1"> to <"h6"> tags </span> - Defines a clear heading hierarchy, ensuring structured content.</li>
+						</p>
+						<p>
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;"> padding and margin</span> -  provide spacing for better readability.</li>
+						<li><span style="color: DarkBlue;">display: flex;</span> - ensures a responsive layout for structuring the content.
+						</p>
+						
+						<p><b> 2.Internal Navigation and "Go to Top" Button</b></br> An internal navigation system improves user experience by allowing quick access to different sections of the page.
+						<ul><span style="color: #641e16;">Key Html tags </span>-:
+						<li><span style="color: DarkBlue;"> <"nav"> tag </span> -  Defines the internal navigation menu for seamless page movement.</li>
+						<li><span style="color: DarkBlue;"> <"a href=#section-id"></span> -  Creates internal links to specific sections for easy navigation.</li>
+						<li><span style="color: DarkBlue;"> <"button"> tag</span> -  Used for the "Go to Top" button to enhance user convenience.</li>
+						<p>
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;"> position: fixed;</span> -  keeps the "Go to Top" button always visible.</li>
+						<li><span style="color: DarkBlue;"> transition: all 0.3s ease;</span> - provides a smooth hover effect.</li>
+						</li><span style="color: DarkBlue;"> color: #0077cc;</span> -  Ensures links are distinct but readable.</li>
+						</p>
+						
+						<p><b> 3.Internal Links for Seamless Navigation</b></br> Internal links improve page usability, allowing users to navigate between related sections without reloading.
+						<ul><span style="color: #641e16;">Key Html tags </span>-:
+						<li><span style="color: DarkBlue;"> <"a href=#related-section"> </span> - Directs users to another part of the same page.</li>
+						</p>
+						<p>
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;"> hover: text-decoration;</span> -  Enhances clarity on hover.</li>
+					    </p>
+						
+						<p><b> 4.Image Styling for Visual Appeal</b></br> Images are integrated to enhance content engagement and illustrate marine pollution issues effectively.
+						<ul><span style="color: #641e16;">Key Html tags </span>-:
+						<li><span style="color: DarkBlue;"> <"img src=image.jpg alt=Description"> </span> - Displays images with descriptions for accessibility.</li>
+						</p>
+						<p>
+						<ul><span style="color: #641e16;">Key CSS Properties </span>-:
+						<li><span style="color: DarkBlue;"> width: 100%; max-width: 600px;</span> -  Ensures images scale responsively without breaking layout.</li>
+						<li><span style="color: DarkBlue;"> border-radius: 10px;</span> -  Applies rounded corners for a modern look.</li>
+						</p>
+                    <h3>Accessibility</h3>
+                        <p style="text-align:justify;">The color contrast between the text and background ensures readability. All paragraphs use justified alignment to maintain a clean reading flow. All images include alt attributes, providing meaningful descriptions for screen reader users. The internal navigation menu allows users to jump between sections. The "Go to Top" button is always visible, allowing easy navigation for users. The page uses CSS media queries to adjust content layout on smaller screens which makes the webpage more responsive and mobile-friendly.</p>
+
+                    <h3>Link to the validation page</h3> 
+                        <p><a href="validation_ST1.html#contentVal">Click here to go to the validation page.</a> </p> 
+						
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content_ST1.html" >Click here to view the Student1 content Page of our website.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p style="text-align:justify;">When adding the background video for the splashscreen ,the video was not covering the full screen properly. As a solution object-fit: cover; was used in CSS to ensure the video fills the entire viewport while maintaining its aspect ratio.I learned that Responsive design applies to videos as well—using object-fit: cover; prevents unwanted cropping or empty spaces.</p> 
+					<p style="text-align:justify;"> Faced an issue with reading the text on the splash screen due to  the dynamic background video. As a solution a semi-transparent overlay was added over the video using CSS.I learned that adding an overlay enhances text contrast and improves accessibility.What I have learnt here was that Small UI elements like dropdowns should follow the same color and theme as the website for a cohesive look.</p>
+					<p style="text-align:justify;"> Faced an issue with the sorting dropdown, where the sorting dropdown did not match the rest of the page design. As a solution CSS styling was customized to ensure consistency.
+					<p style="text-align:justify;">The internal navigation menu was hidden under the header at first when I run the code. As a solution the top property in the CSS was adjusted.What I learnt here was to make sure to leave enough space for the header or navigation bars when using fixed positioning.</p>
+					<p style="text-align:justify;"> The go-to-top button in the content page was not working properly at first. As a solution an anchor link (#top) was used instead of JavaScript.</p>
+					
+
+
+			
+			</section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p style="text-align:justify;">The pages incorporate alt text for images, ensuring visually impaired users can understand visual content through screen readers. Proper color contrast is maintained to ensure text remains legible against background elements. Personal Data Without Consent is not collected. The content is educational and promotes ocean sustainability, ensuring no inappropriate, offensive, or harmful material is published. All images used belong to AquaHorizon (img1 folder) or are credited appropriately. No copyrighted materials are used without permission. By ensuring accessibility, data protection, security, and ethical content, the AquaHorizon pages comply with Janet regulations governing web publication. The website aligns with legal frameworks to create a responsible, safe, and inclusive digital environment.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/"> Click here to get istockphoto</a> (Last accessed: 9 March 2025).</li>
+                        <li>google images </i>google images</i> Available at:<a href="https://images.google.com/">  Click here to get googleimages</a> (Last accessed: 8 March 2025). </li>
+						<li>w3schools </i>w3schools</i> Available at:<a href="https://www.w3schools.com/html/default.asp"></a> (Last accessed: 9 March 2025).</li>
+						<li>Lecture slides <i>lectureslides week 03</i> Available at: <a href="https://learning.westminster.ac.uk/ultra/courses/_100151_1/outline/edit/document/_5174772_1?courseId=_100151_1&view=content&state=view"> click here</a> (Last accessed: 5 March 2025).</li>
+						<li>Lecture slides <i>lectureslides week 07</i> Available at: <a href="https://learning.westminster.ac.uk/ultra/courses/_100151_1/outline/edit/document/_5174779_1?courseId=_100151_1&view=content&state=view"> click here</a> (Last accessed: 6 March 2025).</li>
+						<li>Youtube </i>Youtube</i> Available at:<a href="https://www.youtube.com/watch?v=2ak37WrbSDg">click here to get the youtube video</a> (Last accessed: 3 March 2025). </li>
+					</ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        
+            <ul class="top-level-ul" >
+                
+                <li>Student 1</li>
+                    <ul > 
+                        <li><a href="#">Splash page</a></li>
+                        <li><a href="#volunteer">Volunteer page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="pageeditor" style="padding-bottom: 25px;">
+                <h2>Page Editors</h2>
+                <a href="pageEditor_ST1.html" target="_blank">Page Editor 1</a>
+                <a href="pageEditor_ST2.html" target="_blank">Page Editor 2</a>
+                <a href="pageEditor_ST3.html" target="_blank">Page Editor 3</a>
+                <a href="pageEditor_ST4.html" target="_blank">Page Editor 4</a>
+            </div>
+
+            <div class="styling">
+                <h2>Links</h2>
+                <a href="https://www.globalgoals.org/privacy-policy/">Privacy Policy</a>
+                <a href="https://www.globalgoals.org/terms-conditions/">Terms & Conditions</a>
+                <a href="https://www.globalgoals.org/cookies/">Cookies</a>
+                <a href="https://www.globalgoals.org/anti-corruption/">Anti-Corruption</a>
+                <a href="https://www.globalgoals.org/asset-licence/">Asset-Licence</a>
+                <p style="padding-top:40px; font-size: 17px;">"These links direct to Global Goals' policies for reference purposes only and do not imply official affiliation."</p>
+            </div>
+
+             <div class="copyright">
+                <p>&copy; 2024 AquaHorizon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

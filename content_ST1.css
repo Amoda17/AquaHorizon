@@ -1,0 +1,269 @@
+/* Marine Pollution Content Page Styles */
+ 
+
+/* General Content Layout */
+.content-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+
+
+
+
+/* Container for all sections */
+.content-container {
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+	padding: 170px;
+    box-sizing: border-box; /* Ensures padding doesn’t increase width */
+}
+
+
+.content-section p {
+    text-align: justify;
+    line-height: 1.6; /* Improves readability */
+    margin-bottom: 15px; /* Adds spacing between paragraphs */
+}
+
+/* Section Styling */
+.content-section {
+    background: #d6eaf8; /* Light blue background */
+    padding: 50px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.content-section h2 {
+    color: #006699;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Images */
+.content-section img {
+    width: 50%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Causes Section - Align Images Left */
+.causes-section {
+    display: flex;
+    flex-direction: column; /* Keeps each cause stacked */
+    gap: 30px; /* Adds spacing between causes */
+}
+
+/* Individual Cause Blocks */
+.cause {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 20px; /* Space between image and text */
+    background:#7fb3d5  ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Images in Causes Section */
+.causes-section .cause img {
+    width: 35%; /* Adjusts width for better layout */
+    max-width: 350px;
+    border-radius: 5px;
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+/* Text Content */
+.cause-text {
+    flex: 1; /* Allows text to take remaining space */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .cause {
+        flex-direction: column; /* Stack image above text on small screens */
+        text-align: center;
+    }
+
+    .causes-section .cause img {
+        width: 80%; /* Adjust image size for small screens */
+        max-width: 100%;
+    }
+}
+
+/* Solutions Section - Align Images Left */
+.solutions-section {
+    display: flex;
+    flex-direction: column; /* Keeps each cause stacked */
+    gap: 50px; /* Adds spacing between causes */
+}
+
+/* Individual Cause Blocks */
+.solution{
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    gap: 20px; /* Space between image and text */
+    background:#7fb3d5  ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Images in Solutions Section */
+.solutions-section.cause img {
+    width: 35%; /* Adjusts width for better layout */
+    max-width: 350px;
+    border-radius: 5px;
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+/* Text Content */
+.solution-text {
+    flex: 1; /* Allows text to take remaining space */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .solution {
+        flex-direction: column; /* Stack image above text on small screens */
+        text-align: center;
+    }
+
+    .solutions-section .solution img {
+        width: 80%; /* Adjust image size for small screens */
+        max-width: 100%;
+    }
+}
+
+
+/* Internal Navigation Menu */
+.internal-nav {
+    position: fixed;
+    top: 180px; /* Adjust below the header */
+    left: 10px; /* Position on the left side */
+    background: rgba(173, 216, 230, 0.8); /* Light semi-transparent background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it stays above content */
+}
+
+/* Ensure list styles and spacing */
+.internal-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.internal-nav ul li {
+    margin: 10px 0;
+}
+
+.internal-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 8px 12px;
+    transition: background 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.internal-nav ul li a:hover {
+    background: #39a9f5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .internal-nav {
+        top: auto;
+        bottom: 80px; /* Moves below content for mobile */
+        left: 10px;
+        width: auto;
+    }
+    
+    .internal-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .internal-nav ul li {
+        margin: 0 5px;
+    }
+
+    .internal-nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+
+/* "Go to Top" Button - Always Visible */
+.go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0077b6; /* AquaHorizon theme color */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.go-to-top:hover {
+    background-color: #005f8a;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .internal-nav {
+        top: auto;
+        bottom: 80px; /* Move below content for small screens */
+        left: 10px;
+        width: auto;
+    }
+    
+    .internal-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .internal-nav ul li {
+        margin: 0 5px;
+    }
+
+    .internal-nav ul li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .content-container {
+        padding: 10px;
+    }
+    .section {
+        padding: 15px;
+    }
+    .section h2 {
+        font-size: 24px;
+    }
+    .section p {
+        font-size: 16px;
+    }
+}
